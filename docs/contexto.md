@@ -26,9 +26,17 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+## Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Desenvolver um sistema distribuído, a plataforma **Estante Infinita**, para conectar leitores de todo o Brasil, promovendo a troca de livros usados de forma prática, facilitada e gamificada.
+
+## Objetivos Específicos
+
+- Implementar um sistema de cadastro e gerenciamento de perfil de usuário.  
+- Desenvolver um módulo para catalogação de livros que o usuário possui e deseja trocar.  
+- Implementar uma seção de comentários para que os usuários possam negociar os detalhes da troca.  
+- Desenvolver um sistema de avaliação mútua após a conclusão da troca para construir reputação na plataforma.  
+
 
 > **Links Úteis**:
 >
@@ -96,10 +104,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-| ID  | Restrição                                             |
-| --- | ----------------------------------------------------- |
-| 01  | O projeto deverá ser entregue até o final do semestre |
-| 02  | Não pode ser desenvolvido um módulo de backend        |
+| ID  | Restrição                                                                 |
+|-----|----------------------------------------------------------------------------|
+| 01  | O projeto será desenvolvido pela equipe de 6 alunos                        |
+| 02  | O projeto deverá ser entregue até o final do semestre                      |
+| 03  | O projeto deve atender aos requisitos                                      |
+| 04  | A tecnologia de backend será **Node.js** com **Prisma ORM**. O frontend será feito com **Angular** |
+| 05  | O sistema será hospedado em uma plataforma de nuvem com **plano gratuito** |
+
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
