@@ -1,6 +1,12 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+~Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.~
+
+O alto custo dos livros, especialmente os acadêmicos, ainda é uma barreira. O gráfico “Preço médio dos Gêneros” mostra que Ficção teve a maior alta de preço médio (+8,19%), de R$46,62 para R$50,44; Não Ficção Especialista subiu (+2,43%); já Não Ficção Trade e Infantil/Juvenil/Educacional tiveram leves quedas (–4,76% e –1,27%, respectivamente). Ou seja: parte relevante do catálogo encareceu, reforçando a necessidade de alternativas acessíveis (como usados e doações).
+
+Ao mesmo tempo, o interesse do público segue aquecido quando há estímulos: segundo o SNEL/NielsenIQ, ações promocionais recentes elevaram as vendas do período (07T2025) em +27,78% em volume e +24,38% em receita versus 2024 (4,48 milhões de exemplares; R$ 215,7 milhões). Ficção se destaca no ano, com +7,6% em vendas e +17% em receita, mesmo liderando o aumento de preço médio (R$ 50,44). Esses sinais mostram uma demanda disposta a comprar quando encontra preço e conveniência.
+
+Proposta: lançar um marketplace “estilo OLX, só que de livros”, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro do app; as partes negociam preço, forma de pagamento e entrega pelo chat privado.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
@@ -97,7 +103,48 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+~Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.~
+
+1. Serviço de Usuários (User Service): 
+Funções (Endpoints): 
+
+- POST /users/register: Cadastrar um novo usuário. 
+
+- POST /users/login: Autenticar um usuário. 
+
+- GET /users/{userId}: Obter informações de um perfil. 
+
+- PUT /users/{userId}: Atualizar informações do perfil.
+<br/>
+
+
+2. Serviço de Livros (Book Service): 
+Funções (Endpoints): 
+
+- POST /books: Adicionar um novo livro ao catálogo de um usuário. 
+
+- GET /books/{bookId}: Ver detalhes de um livro específico. 
+
+- GET /books/user/{userId}: Listar todos os livros de um usuário. 
+
+- GET /books/search?q={query}: Buscar livros na plataforma. 
+
+- DELETE /books/{bookId}: Remover um livro do catálogo.
+<br/>
+
+
+3. Serviço de Compras (Purchase Service): 
+Funções (Endpoints): 
+
+- POST /purchases/request: Criar uma solicitação de compra. 
+
+- POST /trades/{tradeId}/accept: Vendedor aceita a solicitação. 
+
+- POST /purchases/{purchaseId}/decline: Vendedor declina solicitação. 
+
+- POST /purchases/{purchaseId}/chat: Enviar nova mensagem. 
+
+- POST /trades/{tradeId}/chat: Enviar um novo comentário. 
 
 # Arquitetura da Solução
 
