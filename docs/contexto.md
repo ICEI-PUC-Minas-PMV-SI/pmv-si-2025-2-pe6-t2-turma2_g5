@@ -4,6 +4,8 @@
 
 O alto custo dos livros, especialmente os acadêmicos, ainda é uma barreira. O gráfico “Preço médio dos Gêneros” mostra que Ficção teve a maior alta de preço médio (+8,19%), de R$46,62 para R$50,44; Não Ficção Especialista subiu (+2,43%); já Não Ficção Trade e Infantil/Juvenil/Educacional tiveram leves quedas (–4,76% e –1,27%, respectivamente). Ou seja: parte relevante do catálogo encareceu, reforçando a necessidade de alternativas acessíveis (como usados e doações).
 
+![Preço médio dos Gêneros](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Pre%C3%A7o%20M%C3%A9dio%20dos%20G%C3%AAneros.jpg)
+
 Ao mesmo tempo, o interesse do público segue aquecido quando há estímulos: segundo o SNEL/NielsenIQ, ações promocionais recentes elevaram as vendas do período (07T2025) em +27,78% em volume e +24,38% em receita versus 2024 (4,48 milhões de exemplares; R$ 215,7 milhões). Ficção se destaca no ano, com +7,6% em vendas e +17% em receita, mesmo liderando o aumento de preço médio (R$ 50,44). Esses sinais mostram uma demanda disposta a comprar quando encontra preço e conveniência.
 
 Proposta: lançar um marketplace “estilo OLX, só que de livros”, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro do app; as partes negociam preço, forma de pagamento e entrega pelo chat privado.
