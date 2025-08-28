@@ -9,13 +9,12 @@
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
-
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* [Giulia Fernandes Donato de Mattos](https://github.com/giulia-donato)
+* [Isadora Aparecida Cardoso Carvalho](https://github.com/isadoraacardoso)
 * Jaime Bispo Dos Santos
-* Nome completo do aluno 6
+* [Rafael Fernandes Marques](https://github.com/marquesrf-pucmg)
+* [Rômulo Ferraz Chaves](https://github.com/RomuloFerrazChaves)
+* Samuel
 
 ## Orientador
 
