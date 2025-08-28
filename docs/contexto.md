@@ -8,7 +8,7 @@ O alto custo dos livros, especialmente os acadêmicos, ainda é uma barreira. O 
 
 Ao mesmo tempo, o interesse do público segue aquecido quando há estímulos: segundo o SNEL/NielsenIQ, ações promocionais recentes elevaram as vendas do período (07T2025) em +27,78% em volume e +24,38% em receita versus 2024 (4,48 milhões de exemplares; R$ 215,7 milhões). Ficção se destaca no ano, com +7,6% em vendas e +17% em receita, mesmo liderando o aumento de preço médio (R$ 50,44). Esses sinais mostram uma demanda disposta a comprar quando encontra preço e conveniência.
 
-Proposta: lançar um marketplace “estilo OLX, só que de livros”, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro do app; as partes negociam preço, forma de pagamento e entrega pelo chat privado.
+Proposta: lançar um marketplace “estilo OLX, só que de livros”, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro do app; as partes negociam preço, forma de pagamento e entrega pela seção de comentários.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
