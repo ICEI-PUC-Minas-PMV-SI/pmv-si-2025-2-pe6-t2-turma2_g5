@@ -11,34 +11,38 @@ Ao mesmo tempo, o interesse do público segue aquecido quando há estímulos: se
 Proposta: lançar um marketplace “estilo OLX, só que de livros”, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro do app; as partes negociam preço, forma de pagamento e entrega pela seção de comentários.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+
+Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
 > **Links Úteis**:
+>
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
 
 Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
+
 > **Links Úteis**:
+>
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O presente projeto propõe o desenvolvimento de um marketplace digital com foco na compra, venda e doação de livros, uma iniciativa que surge como resposta direta a um cenário cultural e econômico complexo no Brasil. A motivação central para a criação desta plataforma reside na necessidade de democratizar o acesso à leitura em um país onde barreiras significativas ainda se impõem a uma grande parcela da população.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+**A Importância de Superar Barreiras Econômicas e Culturais**
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Dados recentes sobre o mercado editorial e os hábitos de leitura no Brasil acendem um alerta. Pesquisas indicam uma preocupante queda no número de leitores, ao mesmo tempo em que o preço dos livros novos continua a ser um impeditivo para muitos. O valor de capa, por vezes elevado, funciona como uma barreira de entrada, afastando potenciais leitores e limitando o acesso ao conhecimento, à cultura e ao lazer. Em contrapartida, observa-se um crescimento expressivo do comércio eletrônico de livros e da economia de segunda mão, um indicativo claro de que os consumidores buscam ativamente por alternativas mais acessíveis.
+
+Nosso marketplace "estilo OLX, só que de livros" ataca diretamente essa questão ao criar um ecossistema que beneficia a todos. Para o leitor que busca novas obras, a plataforma oferecerá preços significativamente mais justos, permitindo que o mesmo valor que seria gasto em um único livro novo possa ser revertido na aquisição de vários títulos usados. Para quem já concluiu uma leitura, o aplicativo oferece a oportunidade de recuperar parte do investimento e, mais importante, de reinserir aquela obra no ciclo de consumo, evitando que um bem cultural de grande valor termine esquecido em uma estante.
 
 ## Público-Alvo
 
@@ -48,6 +52,7 @@ hierárquicas, etc.
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
 > **Links Úteis**:
+>
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
 > - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
@@ -61,45 +66,45 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| ID     | Descrição do Requisito                  | Prioridade |
+| ------ | --------------------------------------- | ---------- |
+| RF-001 | Permitir que o usuário cadastre tarefas | ALTA       |
+| RF-002 | Emitir um relatório de tarefas no mês   | MÉDIA      |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| ID                  | Descrição do Requisito                                                                                                                                    | Prioridade |
+| :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- |
+| **Usabilidade**     |                                                                                                                                                           |            |
+| RNF-001             | O sistema deve possuir uma interface intuitiva, permitindo que um novo usuário consiga listar um livro para venda, troca ou doação em menos de 3 minutos. | ALTA       |
+| RNF-002             | O aplicativo deve ser responsivo e adaptar-se a diferentes tamanhos e orientações de tela de smartphones.                                                 | ALTA       |
+| RNF-003             | O sistema deve fornecer feedback visual ao usuário após a conclusão de ações importantes (ex: anúncio publicado, mensagem enviada).                       | MÉDIA      |
+| **Desempenho**      |                                                                                                                                                           |            |
+| RNF-004             | A busca por livros e a listagem de resultados devem ser concluídas em, no máximo, 2 segundos, mesmo com filtros aplicados.                                | ALTA       |
+| RNF-005             | O tempo para carregar o perfil de um usuário ou os detalhes de um anúncio não deve exceder 3 segundos em uma conexão 4G padrão.                           | MÉDIA      |
+| **Segurança**       |                                                                                                                                                           |            |
+| RNF-006             | Todas as informações de autenticação do usuário, como senhas, devem ser armazenadas no banco de dados de forma criptografada.                             | ALTA       |
+| **Confiabilidade**  |                                                                                                                                                           |            |
+| RNF-007             | O sistema deve possuir uma disponibilidade de 99,5% do tempo, excluindo janelas de manutenção programadas.                                                | MÉDIA      |
+| RNF-008             | As operações de criação, edição ou exclusão de anúncios devem ser atômicas, garantindo a consistência dos dados no banco de dados.                        | ALTA       |
+| **Compatibilidade** |                                                                                                                                                           |            |
+| RNF-009             | O aplicativo móvel deve ser compatível com as duas últimas versões principais do sistema operacional Android.                                             | MÉDIA      |
+| **Escalabilidade**  |                                                                                                                                                           |            |
+| RNF-010             | A arquitetura do sistema deve suportar um crescimento de 50% no número de usuários e anúncios durante 6 meses sem degradação do desempenho.               | BAIXA      |
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+| ID  | Restrição                                             |
+| --- | ----------------------------------------------------- |
+| 01  | O projeto deverá ser entregue até o final do semestre |
+| 02  | Não pode ser desenvolvido um módulo de backend        |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 > **Links Úteis**:
+>
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
@@ -107,53 +112,50 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ~Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.~
 
-1. Serviço de Usuários (User Service): 
-Funções (Endpoints): 
+1. Serviço de Usuários (User Service):
+   Funções (Endpoints):
 
-- POST /users/register: Cadastrar um novo usuário. 
+- POST /users/register: Cadastrar um novo usuário.
 
-- POST /users/login: Autenticar um usuário. 
+- POST /users/login: Autenticar um usuário.
 
-- GET /users/{userId}: Obter informações de um perfil. 
+- GET /users/{userId}: Obter informações de um perfil.
 
 - PUT /users/{userId}: Atualizar informações do perfil.
-<br/>
+  <br/>
 
+2. Serviço de Livros (Book Service):
+   Funções (Endpoints):
 
-2. Serviço de Livros (Book Service): 
-Funções (Endpoints): 
+- POST /books: Adicionar um novo livro ao catálogo de um usuário.
 
-- POST /books: Adicionar um novo livro ao catálogo de um usuário. 
+- GET /books/{bookId}: Ver detalhes de um livro específico.
 
-- GET /books/{bookId}: Ver detalhes de um livro específico. 
+- GET /books/user/{userId}: Listar todos os livros de um usuário.
 
-- GET /books/user/{userId}: Listar todos os livros de um usuário. 
-
-- GET /books/search?q={query}: Buscar livros na plataforma. 
+- GET /books/search?q={query}: Buscar livros na plataforma.
 
 - DELETE /books/{bookId}: Remover um livro do catálogo.
-<br/>
+  <br/>
 
+3. Serviço de Compras (Purchase Service):
+   Funções (Endpoints):
 
-3. Serviço de Compras (Purchase Service): 
-Funções (Endpoints): 
+- POST /purchases/request: Criar uma solicitação de compra.
 
-- POST /purchases/request: Criar uma solicitação de compra. 
+- POST /trades/{tradeId}/accept: Vendedor aceita a solicitação.
 
-- POST /trades/{tradeId}/accept: Vendedor aceita a solicitação. 
+- POST /purchases/{purchaseId}/decline: Vendedor declina solicitação.
 
-- POST /purchases/{purchaseId}/decline: Vendedor declina solicitação. 
+- POST /purchases/{purchaseId}/chat: Enviar nova mensagem.
 
-- POST /purchases/{purchaseId}/chat: Enviar nova mensagem. 
-
-- POST /trades/{tradeId}/chat: Enviar um novo comentário. 
+- POST /trades/{tradeId}/chat: Enviar um novo comentário.
 
 # Arquitetura da Solução
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
 ![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
-
 
 ## Tecnologias Utilizadas
 
@@ -167,7 +169,7 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 # Planejamento
 
-##  Quadro de tarefas
+## Quadro de tarefas
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
@@ -175,25 +177,26 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 Atualizado em: 21/04/2024
 
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Responsável | Tarefa/Requisito     | Iniciado em |   Prazo    | Status | Terminado em |
+| :---------- | :------------------- | :---------: | :--------: | :----: | :----------: |
+| AlunaX      | Introdução           | 01/02/2024  | 07/02/2024 |   ✔️   |  05/02/2024  |
+| AlunaZ      | Objetivos            | 03/02/2024  | 10/02/2024 |   📝   |              |
+| AlunoY      | Histórias de usuário | 01/01/2024  | 07/01/2005 |   ⌛   |              |
+| AlunoK      | Personas 1           | 01/01/2024  | 12/02/2005 |   ❌   |              |
 
 #### Semana 2
 
 Atualizado em: 21/04/2024
 
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Responsável | Tarefa/Requisito | Iniciado em |   Prazo    | Status | Terminado em |
+| :---------- | :--------------- | :---------: | :--------: | :----: | :----------: |
+| AlunaX      | Página inicial   | 01/02/2024  | 07/03/2024 |   ✔️   |  05/02/2024  |
+| AlunaZ      | CSS unificado    | 03/02/2024  | 10/03/2024 |   📝   |              |
+| AlunoY      | Página de login  | 01/02/2024  | 07/03/2024 |   ⌛   |              |
+| AlunoK      | Script de login  | 01/01/2024  | 12/03/2024 |   ❌   |              |
 
 Legenda:
+
 - ✔️: terminado
 - 📝: em execução
 - ⌛: atrasado
