@@ -24,6 +24,20 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
+O mercado de livros no Brasil apresenta barreiras significativas de acesso, principalmente devido ao alto custo dos exemplares, em especial os acadêmicos, que muitas vezes inviabiliza a renovação de bibliotecas pessoais ou a aquisição de novos títulos. Paralelamente, o consumo de livros usados e as práticas de troca vêm ganhando espaço como alternativas mais acessíveis e sustentáveis.
+
+No entanto, essas práticas ainda ocorrem de forma fragmentada e pouco estruturada, geralmente em redes sociais, grupos de mensagens ou eventos presenciais específicos, o que traz alguns desafios:
+
+Dificuldade de alcance: leitores têm acesso limitado a pessoas com interesses literários compatíveis.
+
+Falta de organização: não existe um catálogo centralizado que facilite a busca por títulos.
+
+Insegurança nas negociações: a ausência de mecanismos de confiança gera receio em relação à qualidade do livro, à seriedade da troca e à possibilidade de golpes.
+
+Ausência de continuidade: mesmo quando a troca ocorre, não há um sistema que valorize a reputação dos participantes, o que dificulta a criação de uma comunidade sólida.
+
+Esse cenário cria uma lacuna entre o interesse crescente pela leitura e a disponibilidade de meios seguros, acessíveis e sustentáveis para ampliar o acesso aos livros.
+
 ## Objetivos
 
 ## Objetivo Geral
