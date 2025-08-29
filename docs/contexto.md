@@ -73,24 +73,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
-| ID                  | Descrição do Requisito                                                                                                                                    | Prioridade |
-| :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- |
-| **Usabilidade**     |                                                                                                                                                           |            |
-| RNF-001             | O sistema deve possuir uma interface intuitiva, permitindo que um novo usuário consiga listar um livro para venda, troca ou doação em menos de 3 minutos. | ALTA       |
-| RNF-002             | O aplicativo deve ser responsivo e adaptar-se a diferentes tamanhos e orientações de tela de smartphones.                                                 | ALTA       |
-| RNF-003             | O sistema deve fornecer feedback visual ao usuário após a conclusão de ações importantes (ex: anúncio publicado, mensagem enviada).                       | MÉDIA      |
-| **Desempenho**      |                                                                                                                                                           |            |
-| RNF-004             | A busca por livros e a listagem de resultados devem ser concluídas em, no máximo, 2 segundos, mesmo com filtros aplicados.                                | ALTA       |
-| RNF-005             | O tempo para carregar o perfil de um usuário ou os detalhes de um anúncio não deve exceder 3 segundos em uma conexão 4G padrão.                           | MÉDIA      |
-| **Segurança**       |                                                                                                                                                           |            |
-| RNF-006             | Todas as informações de autenticação do usuário, como senhas, devem ser armazenadas no banco de dados de forma criptografada.                             | ALTA       |
-| **Confiabilidade**  |                                                                                                                                                           |            |
-| RNF-007             | O sistema deve possuir uma disponibilidade de 99,5% do tempo, excluindo janelas de manutenção programadas.                                                | MÉDIA      |
-| RNF-008             | As operações de criação, edição ou exclusão de anúncios devem ser atômicas, garantindo a consistência dos dados no banco de dados.                        | ALTA       |
-| **Compatibilidade** |                                                                                                                                                           |            |
-| RNF-009             | O aplicativo móvel deve ser compatível com as duas últimas versões principais do sistema operacional Android.                                             | MÉDIA      |
-| **Escalabilidade**  |                                                                                                                                                           |            |
-| RNF-010             | A arquitetura do sistema deve suportar um crescimento de 50% no número de usuários e anúncios durante 6 meses sem degradação do desempenho.               | BAIXA      |
+| ID                 | Descrição do Requisito                                                                                                              | Prioridade |
+| :----------------- | :---------------------------------------------------------------------------------------------------------------------------------- | :--------- |
+| **Usabilidade**    |                                                                                                                                     |            |
+| RNF-001            | O sistema deve possuir uma interface intuitiva, permitindo que um novo usuário consiga listar um livro em menos de 30 segundos.     | ALTA       |
+| RNF-002            | O aplicativo deve ser responsivo e adaptar-se a diferentes tamanhos e orientações de tela de smartphones.                           | ALTA       |
+| RNF-003            | O sistema deve fornecer feedback visual ao usuário após a conclusão de ações importantes (ex: anúncio publicado, mensagem enviada). | MÉDIA      |
+| **Desempenho**     |                                                                                                                                     |            |
+| RNF-004            | A busca por livros e a listagem de resultados devem ser concluídas em, no máximo, 2 segundos, mesmo com filtros aplicados.          | ALTA       |
+| RNF-005            | O tempo para carregar o perfil de um usuário ou os detalhes de um anúncio não deve exceder 3 segundos em uma conexão 4G padrão.     | MÉDIA      |
+| **Segurança**      |                                                                                                                                     |            |
+| RNF-006            | Todas as informações de autenticação do usuário, como senhas, devem ser armazenadas no banco de dados de forma criptografada.       | ALTA       |
+| **Confiabilidade** |                                                                                                                                     |            |
+| RNF-007            | O sistema deve possuir uma disponibilidade de 99,5% do tempo, excluindo janelas de manutenção programadas.                          | MÉDIA      |
+| RNF-008            | As operações de criação, edição ou exclusão de anúncios devem ser atômicas, garantindo a consistência dos dados no banco de dados.  | ALTA       |
 
 ## Restrições
 
