@@ -11,7 +11,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 * [Giulia Fernandes Donato de Mattos](https://github.com/giulia-donato)
 * [Isadora Aparecida Cardoso Carvalho](https://github.com/isadoraacardoso)
-* Jaime Bispo Dos Santos
+* Jaime Bispo Dos Santos[https://github.com/Jaimebispo]
 * [Rafael Fernandes Marques](https://github.com/marquesrf-pucmg)
 * [Rômulo Ferraz Chaves](https://github.com/RomuloFerrazChaves)
 * Samuel
