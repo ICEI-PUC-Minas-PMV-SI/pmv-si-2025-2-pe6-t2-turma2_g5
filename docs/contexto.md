@@ -88,10 +88,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-| ID     | Descrição do Requisito                  | Prioridade |
-| ------ | --------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês   | MÉDIA      |
+| ID     | Descrição do Requisito                                                     | Prioridade |
+| ------ | -------------------------------------------------------------------------- | ---------- |
+| RF-001 | Cadastro e login de usuários.                                              | ALTA       |
+| RF-002 | Cadastro de livros com título, autor, edição, estado e foto.               | ALTA       |
+| RF-003 | Visualização de detalhes de livros cadastrados.                            | ALTA       |
+| RF-004 | Busca e filtros por categoria.                                             | MÉDIA      |
+| RF-005 | Aba de comentários na página de cada livro para interação entre usuários.  | ALTA       |
+| RF-006 | Avaliação dos livros.                                                      | MÉDIA      |
 
 ### Requisitos não Funcionais
 
