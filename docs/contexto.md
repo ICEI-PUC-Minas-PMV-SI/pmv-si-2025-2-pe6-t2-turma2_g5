@@ -67,11 +67,8 @@ Dados recentes sobre o mercado editorial e os hábitos de leitura no Brasil acen
 Nosso marketplace "estilo OLX, só que de livros" ataca diretamente essa questão ao criar um ecossistema que beneficia a todos. Para o leitor que busca novas obras, a plataforma oferecerá preços significativamente mais justos, permitindo que o mesmo valor que seria gasto em um único livro novo possa ser revertido na aquisição de vários títulos usados. Para quem já concluiu uma leitura, o aplicativo oferece a oportunidade de recuperar parte do investimento e, mais importante, de reinserir aquela obra no ciclo de consumo, evitando que um bem cultural de grande valor termine esquecido em uma estante.
 
 ## Público-Alvo
+Jovens e adultos, acima de 18 anos, residentes no Brasil, apaixonados por leitura, estudantes universitários e pessoas engajadas em práticas de consumo consciente e sustentável que buscam maneiras econômicas de acessar novos títulos e pessoas que incentivam a leitura. 
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
 > **Links Úteis**:
 >
