@@ -95,7 +95,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-003 | Visualização de detalhes de livros cadastrados.                            | ALTA       |
 | RF-004 | Busca e filtros por categoria.                                             | MÉDIA      |
 | RF-005 | Aba de comentários na página de cada livro para interação entre usuários.  | ALTA       |
-| RF-006 | Avaliação dos livros.                                                      | MÉDIA      |
+| RF-006 | Avaliação do usuário.                                                     | MÉDIA      |
 
 ### Requisitos não Funcionais
 
