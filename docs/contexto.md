@@ -2,13 +2,13 @@
 
 ~Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.~
 
-O alto custo dos livros, especialmente os acadêmicos, ainda é uma barreira. O gráfico “Preço médio dos Gêneros” mostra que Ficção teve a maior alta de preço médio (+8,19%), de R$46,62 para R$50,44; Não Ficção Especialista subiu (+2,43%); já Não Ficção Trade e Infantil/Juvenil/Educacional tiveram leves quedas (–4,76% e –1,27%, respectivamente). Ou seja: parte relevante do catálogo encareceu, reforçando a necessidade de alternativas acessíveis (como usados e doações).
+O alto custo dos livros, é uma barreira para muitos e esse cenário fica claro no gráfico “Preço médio dos Gêneros”, onde Ficção teve a maior alta (+8,19%), de R$ 46,62 para R$ 50,44; Não Ficção Especialista subiu (+2,43%); já Não Ficção Trade e Infantil/Juvenil/Educacional recuaram levemente (–4,76% e –1,27%). Em síntese, parte relevante do catálogo encareceu, reforçando a necessidade de alternativas acessíveis (como usados e doações). 
 
 ![Preço médio dos Gêneros](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Pre%C3%A7o%20M%C3%A9dio%20dos%20G%C3%AAneros.jpg)
 
-Ao mesmo tempo, o interesse do público segue aquecido quando há estímulos: segundo o SNEL/NielsenIQ, ações promocionais recentes elevaram as vendas do período (07T2025) em +27,78% em volume e +24,38% em receita versus 2024 (4,48 milhões de exemplares; R$ 215,7 milhões). Ficção se destaca no ano, com +7,6% em vendas e +17% em receita, mesmo liderando o aumento de preço médio (R$ 50,44). Esses sinais mostram uma demanda disposta a comprar quando encontra preço e conveniência.
+Ao mesmo tempo, o interesse do público segue aquecido quando há estímulos: segundo o SNEL/NielsenIQ, ações promocionais recentes elevaram as vendas do período (07T2025) em +27,78% em volume e +24,38% em receita versus 2024 (4,48 milhões de exemplares; R$ 215,7 milhões). Ficção se destaca no ano, com +7,6% em vendas e +17% em receita, mesmo liderando o aumento de preço médio (R$ 50,44). Esses sinais mostram uma demanda disposta a comprar quando encontra preço mais acessível e conveniência. 
 
-Proposta: lançar um marketplace “estilo OLX, só que de livros”, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro do app; as partes negociam preço, forma de pagamento e entrega pela seção de comentários.
+Com isso, a proposta é lançar um Marketplace estilo OLX, mas somente de livros, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro da plataforma, as partes negociam preço, forma de pagamento e entrega pela seção de comentários. 
 
 ## Problema
 
@@ -24,11 +24,33 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
+O mercado de livros no Brasil apresenta barreiras significativas de acesso, principalmente devido ao alto custo dos exemplares, em especial os acadêmicos, que muitas vezes inviabiliza a renovação de bibliotecas pessoais ou a aquisição de novos títulos. Paralelamente, o consumo de livros usados e as práticas de troca vêm ganhando espaço como alternativas mais acessíveis e sustentáveis.
+
+No entanto, essas práticas ainda ocorrem de forma fragmentada e pouco estruturada, geralmente em redes sociais, grupos de mensagens ou eventos presenciais específicos, o que traz alguns desafios:
+
+Dificuldade de alcance: leitores têm acesso limitado a pessoas com interesses literários compatíveis.
+
+Falta de organização: não existe um catálogo centralizado que facilite a busca por títulos.
+
+Insegurança nas negociações: a ausência de mecanismos de confiança gera receio em relação à qualidade do livro, à seriedade da troca e à possibilidade de golpes.
+
+Ausência de continuidade: mesmo quando a troca ocorre, não há um sistema que valorize a reputação dos participantes, o que dificulta a criação de uma comunidade sólida.
+
+Esse cenário cria uma lacuna entre o interesse crescente pela leitura e a disponibilidade de meios seguros, acessíveis e sustentáveis para ampliar o acesso aos livros.
+
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+## Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Desenvolver um sistema distribuído, a plataforma **Estante Infinita**, para conectar leitores de todo o Brasil, promovendo a troca de livros usados de forma prática, facilitada e gamificada.
+
+## Objetivos Específicos
+
+- Implementar um sistema de cadastro e gerenciamento de perfil de usuário.  
+- Desenvolver um módulo para catalogação de livros que o usuário possui e deseja trocar.  
+- Implementar uma seção de comentários para que os usuários possam negociar os detalhes da troca.  
+- Desenvolver um sistema de avaliação mútua após a conclusão da troca para construir reputação na plataforma.  
+
 
 > **Links Úteis**:
 >
@@ -45,11 +67,8 @@ Dados recentes sobre o mercado editorial e os hábitos de leitura no Brasil acen
 Nosso marketplace "estilo OLX, só que de livros" ataca diretamente essa questão ao criar um ecossistema que beneficia a todos. Para o leitor que busca novas obras, a plataforma oferecerá preços significativamente mais justos, permitindo que o mesmo valor que seria gasto em um único livro novo possa ser revertido na aquisição de vários títulos usados. Para quem já concluiu uma leitura, o aplicativo oferece a oportunidade de recuperar parte do investimento e, mais importante, de reinserir aquela obra no ciclo de consumo, evitando que um bem cultural de grande valor termine esquecido em uma estante.
 
 ## Público-Alvo
+Jovens e adultos, acima de 18 anos, residentes no Brasil, apaixonados por leitura, estudantes universitários e pessoas engajadas em práticas de consumo consciente e sustentável que buscam maneiras econômicas de acessar novos títulos e pessoas que incentivam a leitura. 
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
 > **Links Úteis**:
 >
@@ -66,10 +85,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-| ID     | Descrição do Requisito                  | Prioridade |
-| ------ | --------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês   | MÉDIA      |
+| ID     | Descrição do Requisito                                                     | Prioridade |
+| ------ | -------------------------------------------------------------------------- | ---------- |
+| RF-001 | Cadastro e login de usuários.                                              | ALTA       |
+| RF-002 | Cadastro de livros com título, autor, edição, estado e foto.               | ALTA       |
+| RF-003 | Visualização de detalhes de livros cadastrados.                            | ALTA       |
+| RF-004 | Busca e filtros por categoria.                                             | MÉDIA      |
+| RF-005 | Aba de comentários na página de cada livro para interação entre usuários.  | ALTA       |
+| RF-006 | Avaliação do usuário.                                                     | MÉDIA      |
 
 ### Requisitos não Funcionais
 
@@ -92,10 +115,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-| ID  | Restrição                                             |
-| --- | ----------------------------------------------------- |
-| 01  | O projeto deverá ser entregue até o final do semestre |
-| 02  | Não pode ser desenvolvido um módulo de backend        |
+| ID  | Restrição                                                                 |
+|-----|----------------------------------------------------------------------------|
+| 01  | O projeto será desenvolvido pela equipe de 6 alunos                        |
+| 02  | O projeto deverá ser entregue até o final do semestre                      |
+| 03  | O projeto deve atender aos requisitos                                      |
+| 04  | A tecnologia de backend será **Node.js** com **Prisma ORM**. O frontend será feito com **Angular** |
+| 05  | O sistema será hospedado em uma plataforma de nuvem com **plano gratuito** |
+
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
