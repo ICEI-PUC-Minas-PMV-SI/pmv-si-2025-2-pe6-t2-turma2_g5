@@ -68,7 +68,16 @@ Nosso marketplace "estilo OLX, só que de livros" ataca diretamente essa questã
 
 ## Público-Alvo
 Jovens e adultos, acima de 18 anos, residentes no Brasil, apaixonados por leitura, estudantes universitários e pessoas engajadas em práticas de consumo consciente e sustentável que buscam maneiras econômicas de acessar novos títulos e pessoas que incentivam a leitura. 
+## Personas
+Ana Clara tem 25 anos, é professora e apaixonada por leitura. Ela está sempre em busca de se capacitar profissionalmente. Com frequência, procura adquirir livros tanto para entretenimento quanto para seu desenvolvimento pessoal e profissional. Recentemente, percebeu que já possui muitos livros em sua estante e está procurando uma forma de dispensar alguns para adquirir novos, já que haverá espaço disponível. 
 
+Luiz Carlos tem 45 anos, é jornalista e mora no município de Bagre, no estado do Pará. Com o intuito de melhorar a educação em sua região, ele criou uma biblioteca comunitária. Como dispõe de pouca verba para mantê-la, está sempre em busca de novos títulos para a biblioteca. Ele acredita que, se conseguir firmar algumas parcerias, poderá adquirir livros por meio de doações. 
+
+Leandro tem 19 anos e é estudante universitário. Ele possui alguns livros que já leu diversas vezes e, agora, deseja adquirir novos títulos. Há alguns livros que ele deseja muito, mas achou o valor muito alto. Por isso, procura uma forma de adquiri-los por um preço melhor ou tentar trocá-los por alguns dos livros que já possui. 
+
+Alana tem 36 anos e trabalha no setor público, na área de meio ambiente. Ela afirma que a leitura transforma as pessoas, organiza clubes de leitura e, sempre que possível, incentiva as pessoas a buscarem formas sustentáveis de adquirir novos livros. 
+
+Tânia tem 68 anos e é enfermeira aposentada. Um dos seus principais hobbies é a leitura. Um dia, ao fazer algumas mudanças em sua casa, percebeu que possuía um grande acervo de livros. Diante disso, decidiu que deveria doar alguns deles, pois entendeu que livros parados em estantes não servem para nada. 
 
 > **Links Úteis**:
 >
