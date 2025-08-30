@@ -78,7 +78,7 @@ Leandro tem 19 anos e é estudante universitário. Ele possui alguns livros que 
 Alana tem 36 anos e trabalha no setor público, na área de meio ambiente. Ela afirma que a leitura transforma as pessoas, organiza clubes de leitura e, sempre que possível, incentiva as pessoas a buscarem formas sustentáveis de adquirir novos livros. 
 
 Tânia tem 68 anos e é enfermeira aposentada. Um dos seus principais hobbies é a leitura. Um dia, ao fazer algumas mudanças em sua casa, percebeu que possuía um grande acervo de livros. Diante disso, decidiu que deveria doar alguns deles, pois entendeu que livros parados em estantes não servem para nada.  
-
+Tânia tem 68 anos, é enfermeira aposentada. Um dos seus principais hobbies é a leitura, um dia ao fazer algumas mudanças em sua casa percebeu que possui-a um grande acervo de livros desta forma ela tomou a decisão de que deveria doar alguns de seus livros. Pois, ela entendeu que livros parados em estantes de nada serve.
 > **Links Úteis**:
 >
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
