@@ -135,44 +135,57 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ~Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.~
 
-1. Serviço de Usuários (User Service):
-   Funções (Endpoints):
+### 1. Serviços de Negócio
+   1.1. Serviço de Compra de Livros Usados
+   - Descrição: Facilita a publicação, busca e negociação de livros usados a preços acessíveis.
+   - Valor para o cliente: Acesso a livros em bom estado, por valores mais justos, ampliando as opções de leitura.
+   - Meios de entrega (TI):
+      - Plataforma web responsiva;
+      - Aplicativo mobile (Android);
+      - Sistema de busca e filtros por título, autor e categoria;
+      - Seção de comentários para negociação entre as partes;
+   - Garantias: Disponibilidade da aplicação 24/7, suporte básico a problemas técnicos.
 
-- POST /users/register: Cadastrar um novo usuário.
+   1.2. Serviço de Doação de Livros
+   - Descrição: Permite que usuários disponibilizem seus acervos gratuitamente para doação, sem custo para quem doa nem para quem recebe.
+   - Valor para o cliente: Amplia o ciclo de vida dos livros, promove acesso democrático à leitura e incentiva práticas colaborativas.
+   - Meios de entrega (TI):
+      - Cadastro simples de itens para doação;
+      - Classificação por gênero;
+   - Garantias: Notificações, sistema de mensagens via comentários funcionando de forma estável.
 
-- POST /users/login: Autenticar um usuário.
+### 2. Serviços de Suporte
+   2.1. Suporte ao Usuário
+   - Descrição: Apoio técnico via e-mail para resolução de problemas de login, cadastro e uso da aplicação.
+   - Valor para o cliente: Garantia de continuidade no uso da plataforma.
+   - Responsabilidade de custos/risco: Mantidos pela equipe de TI, sem ônus adicional ao usuário.
 
-- GET /users/{userId}: Obter informações de um perfil.
+   2.2. Gestão de Contas e Perfis
+   - Descrição: Serviço para criação, manutenção e exclusão de contas de usuários. Inclui gerenciamento de preferências, histórico de negociações e anúncios.
+   - Valor para o cliente: Experiência personalizada e confiabilidade no acesso.
+   - Garantias:
+      - Acesso contínuo ao perfil do usuário.;
+      - Autonomia para editar ou excluir dados;
+      - Ferramenta de recuperação de senha disponível;
+      - Suporte técnico em caso de falhas de login ou inconsistências na conta.
+    
+### 3. Serviços de Infraestrutura e Tecnologia
+   3.1. Disponibilidade da Plataforma
+   - Descrição: Garantia de que a aplicação (web e mobile) esteja estável e disponível.
+   - Valor para o cliente: Acesso contínuo aos serviços de compra e doação.
+   - Parâmetros de desempenho:
+      - Correções rápidas em caso de falha crítica;
+      - Monitoramento contínuo da infraestrutura.
 
-- PUT /users/{userId}: Atualizar informações do perfil.
-  <br/>
+   3.2. Serviços de Notificação
+   - Descrição: Envio de alertas e atualizações sobre novos livros cadastrados, mensagens em anúncios e interações de negociação.
+   - Valor para o cliente: Agilidade na comunicação, aumentando as chances de concluir transações.
 
-2. Serviço de Livros (Book Service):
-   Funções (Endpoints):
+### 4. Serviços Educacionais e de Engajamento
+   4.1 Orientação ao Usuário
+   - Descrição: Conteúdo educativo (FAQs, tutoriais, boas práticas) sobre como anunciar, negociar e doar livros de forma segura;
+   - Valor para o cliente: Maior autonomia, confiança no uso e redução de falhas.
 
-- POST /books: Adicionar um novo livro ao catálogo de um usuário.
-
-- GET /books/{bookId}: Ver detalhes de um livro específico.
-
-- GET /books/user/{userId}: Listar todos os livros de um usuário.
-
-- GET /books/search?q={query}: Buscar livros na plataforma.
-
-- DELETE /books/{bookId}: Remover um livro do catálogo.
-  <br/>
-
-3. Serviço de Compras (Purchase Service):
-   Funções (Endpoints):
-
-- POST /purchases/request: Criar uma solicitação de compra.
-
-- POST /trades/{tradeId}/accept: Vendedor aceita a solicitação.
-
-- POST /purchases/{purchaseId}/decline: Vendedor declina solicitação.
-
-- POST /purchases/{purchaseId}/chat: Enviar nova mensagem.
-
-- POST /trades/{tradeId}/chat: Enviar um novo comentário.
 
 # Arquitetura da Solução
 
