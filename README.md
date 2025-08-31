@@ -6,7 +6,7 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A Estante Infinita nasce como resposta ao cenário em que o preço elevado dos livros se impõe como barreira ao acesso à leitura, especialmente após os recentes aumentos registrados em gêneros como Ficção. A proposta justifica-se pela necessidade de democratizar o acesso ao conhecimento, criando um marketplace digital que privilegia a compra de usados e a doação gratuita, ampliando o ciclo de vida dos acervos e reduzindo custos. O público-alvo são jovens e adultos a partir de 18 anos, estudantes e leitores engajados em práticas de consumo consciente e sustentável, que buscam alternativas econômicas para acessar novos títulos e veem na leitura não apenas lazer, mas também oportunidade de formação cultural e acadêmica.
 
 ## Integrantes
 * [Giulia Fernandes Donato de Mattos](https://github.com/giulia-donato)
