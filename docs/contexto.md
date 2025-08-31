@@ -125,12 +125,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 | ID  | Restrição                                                                 |
 |-----|----------------------------------------------------------------------------|
-| 01  | O projeto será desenvolvido pela equipe de 6 alunos                        |
-| 02  | O projeto deverá ser entregue até o final do semestre                      |
-| 03  | O projeto deve atender aos requisitos                                      |
-| 04  | A tecnologia de backend será **Node.js** com **Prisma ORM**. O frontend será feito com **Angular** |
-| 05  | O sistema será hospedado em uma plataforma de nuvem com **plano gratuito** |
-
+| 01  | O projeto não terá orçamento para ser desenvolvido                         |
+| 02  | O projeto deverá ser entregue em aproximadamente 6 meses                   |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
@@ -201,9 +197,27 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
 
-## Tecnologias Utilizadas
+# Tecnologias para Implementação da Solução
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+## Frontend (Web)
+- **Angular (TypeScript)**: Framework para construção de interfaces web dinâmicas e responsivas.
+
+## Backend (API/Serviços)
+- **Node.js**: Runtime para execução do JavaScript/TypeScript no servidor.
+- **Prisma ORM**: Ferramenta de mapeamento objeto-relacional para gerenciar o banco de dados de forma segura e produtiva.
+
+## Banco de Dados
+- **SQLite**
+
+## Aplicativo Nativo (Mobile)
+- **React Native**
+- **Ionic + Capacitor**
+
+## Ferramentas de Desenvolvimento
+- **VS Code**: IDE principal para desenvolvimento front-end, back-end e mobile.
+- **Git**: Controle de versão.
+- **Postman ou Insomnia**: Teste de APIs.
+- **Node Package Manager (npm)**: Gerenciamento de pacotes e dependências.
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
