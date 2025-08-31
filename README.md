@@ -14,7 +14,7 @@ A Estante Infinita nasce como resposta ao cenário em que o preço elevado dos l
 * [Jaime Bispo Dos Santos](https://github.com/Jaimebispo)
 * [Rafael Fernandes Marques](https://github.com/marquesrf-pucmg)
 * [Rômulo Ferraz Chaves](https://github.com/RomuloFerrazChaves)
-* Samuel
+* [Samuel Marques Pereira](https://github.com/oSam2)
 
 ## Orientador
 
