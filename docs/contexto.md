@@ -127,33 +127,45 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ### 1. Serviços de Negócio
    1.1. Serviço de Compra de Livros Usados
-   - Descrição: Facilita a publicação, busca e negociação de livros usados a preços acessíveis.
-   - Valor para o cliente: Acesso a livros em bom estado, por valores mais justos, ampliando as opções de leitura.
+   - Descrição: facilita a publicação, busca e negociação de livros usados a preços acessíveis.
+   - Valor para o cliente: acesso a livros em bom estado, por valores mais justos, ampliando as opções de leitura.
+   - Criticidade: alta, pois é um serviço central do negócio.
    - Meios de entrega (TI):
       - Plataforma web responsiva;
       - Aplicativo mobile (Android);
       - Sistema de busca e filtros por título, autor e categoria;
-      - Seção de comentários para negociação entre as partes;
-   - Garantias: Disponibilidade da aplicação 24/7, suporte básico a problemas técnicos.
+      - Seção de comentários para negociação entre as partes.
+   - SLAs: disponibilidade da aplicação 24/7.
+   - Garantias: suporte básico a problemas técnicos.
 
    1.2. Serviço de Doação de Livros
-   - Descrição: Permite que usuários disponibilizem seus acervos gratuitamente para doação, sem custo para quem doa nem para quem recebe.
-   - Valor para o cliente: Amplia o ciclo de vida dos livros, promove acesso democrático à leitura e incentiva práticas colaborativas.
+   - Descrição: permite que usuários disponibilizem seus acervos gratuitamente para doação, sem custo para quem doa nem para quem recebe.
+   - Valor para o cliente: amplia o ciclo de vida dos livros, promove acesso democrático à leitura e incentiva práticas colaborativas.
+   - Criticidade: média, pois é um serviço estratégico de impacto social.
    - Meios de entrega (TI):
       - Cadastro simples de itens para doação;
       - Classificação por gênero;
-   - Garantias: Notificações, sistema de mensagens via comentários funcionando de forma estável.
+   - SLAs: disponibilidade da aplicação 24/7;
+   - Garantias: notificações, sistema de mensagens via comentários funcionando de forma estável.
 
 ### 2. Serviços de Suporte
    2.1. Suporte ao Usuário
-   - Descrição: Apoio técnico via e-mail para resolução de problemas de login, cadastro e uso da aplicação.
-   - Valor para o cliente: Garantia de continuidade no uso da plataforma.
-   - Responsabilidade de custos/risco: Mantidos pela equipe de TI, sem ônus adicional ao usuário.
+   - Descrição: apoio técnico via e-mail para resolução de problemas de login, cadastro e uso da aplicação.
+   - Valor para o cliente: garantia de continuidade no uso da plataforma.
+   - Criticidade: média.
+   - SLAs: 
+      - Tempo de resposta a chamados: até 24h úteis.
+      - Tempo de resolução de incidentes simples: até 48h úteis.
+   - Responsabilidade de custos/risco: mantidos pela equipe de TI, sem ônus adicional ao usuário.
 
    2.2. Gestão de Contas e Perfis
    - Descrição: Serviço para criação, manutenção e exclusão de contas de usuários. Inclui gerenciamento de preferências, histórico de negociações e anúncios.
-   - Valor para o cliente: Experiência personalizada e confiabilidade no acesso.
-   - Garantias:
+   - Valor para o cliente: experiência personalizada e confiabilidade no acesso.
+   - Criticidade: alta.
+   - SLAs: 
+      - Atendimento a inconsistências de conta em até 48h úteis;
+      - Recuperação de senha em até 15 minutos.
+   - Garantias: 
       - Acesso contínuo ao perfil do usuário.;
       - Autonomia para editar ou excluir dados;
       - Ferramenta de recuperação de senha disponível;
@@ -161,20 +173,26 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
     
 ### 3. Serviços de Infraestrutura e Tecnologia
    3.1. Disponibilidade da Plataforma
-   - Descrição: Garantia de que a aplicação (web e mobile) esteja estável e disponível.
-   - Valor para o cliente: Acesso contínuo aos serviços de compra e doação.
+   - Descrição: garantia de que a aplicação (web e mobile) esteja estável e disponível.
+   - Valor para o cliente: acesso contínuo aos serviços de compra e doação.
+   - Criticidade: muito alta.
+   - SLAs: correção de falhas críticas em até 4h.
    - Parâmetros de desempenho:
       - Correções rápidas em caso de falha crítica;
       - Monitoramento contínuo da infraestrutura.
 
    3.2. Serviços de Notificação
-   - Descrição: Envio de alertas e atualizações sobre novos livros cadastrados, mensagens em anúncios e interações de negociação.
-   - Valor para o cliente: Agilidade na comunicação, aumentando as chances de concluir transações.
+   - Descrição: envio de alertas e atualizações sobre novos livros cadastrados, mensagens em anúncios e interações de negociação.
+   - Valor para o cliente: agilidade na comunicação, aumentando as chances de concluir transações.
+   - Criticidade: média.
+   - SLAs: entrega de notificações em até 5 minutos.
 
 ### 4. Serviços Educacionais e de Engajamento
    4.1 Orientação ao Usuário
-   - Descrição: Conteúdo educativo (FAQs, tutoriais, boas práticas) sobre como anunciar, negociar e doar livros de forma segura;
-   - Valor para o cliente: Maior autonomia, confiança no uso e redução de falhas.
+   - Descrição: conteúdo educativo (FAQs, tutoriais, boas práticas) sobre como anunciar, negociar e doar livros de forma segura;
+   - Valor para o cliente: maior autonomia, confiança no uso e redução de falhas.
+   - Criticidade: baixa.
+   - SLAs: atualização de conteúdos sempre que houver mudanças relevantes na plataforma.
 
 
 # Arquitetura da Solução
