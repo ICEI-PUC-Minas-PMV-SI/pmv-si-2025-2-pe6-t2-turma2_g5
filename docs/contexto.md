@@ -1,14 +1,14 @@
 # Introdução
 
-~Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.~
-
 O alto custo dos livros, é uma barreira para muitos e esse cenário fica claro no gráfico “Preço médio dos Gêneros”, onde Ficção teve a maior alta (+8,19%), de R$ 46,62 para R$ 50,44; Não Ficção Especialista subiu (+2,43%); já Não Ficção Trade e Infantil/Juvenil/Educacional recuaram levemente (–4,76% e –1,27%). Em síntese, parte relevante do catálogo encareceu, reforçando a necessidade de alternativas acessíveis (como usados e doações). 
 
 ![Preço médio dos Gêneros](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Pre%C3%A7o%20M%C3%A9dio%20dos%20G%C3%AAneros.jpg)
 
 Ao mesmo tempo, o interesse do público segue aquecido quando há estímulos: segundo o SNEL/NielsenIQ, ações promocionais recentes elevaram as vendas do período (07T2025) em +27,78% em volume e +24,38% em receita versus 2024 (4,48 milhões de exemplares; R$ 215,7 milhões). Ficção se destaca no ano, com +7,6% em vendas e +17% em receita, mesmo liderando o aumento de preço médio (R$ 50,44). Esses sinais mostram uma demanda disposta a comprar quando encontra preço mais acessível e conveniência. 
 
-Com isso, a proposta é lançar um Marketplace estilo OLX, mas somente de livros, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro da plataforma, as partes negociam preço, forma de pagamento e entrega pela seção de comentários. 
+Então, a proposta é lançar um Marketplace estilo OLX, mas somente de livros, com dois caminhos principais: compra de usados (preços mais justos) e doação (custo zero), reduzindo barreiras de acesso e ampliando o ciclo de vida dos acervos. Diferente de um e-commerce tradicional, não haverá pagamento dentro da plataforma, as partes negociam preço, forma de pagamento e entrega pela seção de comentários. 
+
+Portanto, a Estante Infinita nasce como resposta ao cenário em que o preço elevado dos livros se impõe como barreira ao acesso à leitura, especialmente após os recentes aumentos registrados em gêneros como Ficção. A proposta justifica-se pela necessidade de democratizar o acesso ao conhecimento, criando um marketplace digital que privilegia a compra de usados e a doação gratuita, ampliando o ciclo de vida dos acervos e reduzindo custos. O público-alvo são jovens e adultos a partir de 18 anos, estudantes e leitores engajados em práticas de consumo consciente e sustentável, que buscam alternativas econômicas para acessar novos títulos e veem na leitura não apenas lazer, mas também oportunidade de formação cultural e acadêmica.
 
 ## Problema
 
@@ -124,8 +124,6 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
-
-~Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.~
 
 ### 1. Serviços de Negócio
    1.1. Serviço de Compra de Livros Usados
