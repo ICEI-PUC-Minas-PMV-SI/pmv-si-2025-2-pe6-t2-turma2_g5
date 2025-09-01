@@ -246,7 +246,7 @@ Atualizado em: 31/08/2025
 | Jaime       | Público Alvo                    | 01/08/2025  | 31/08/2025 |   ✔️   |  31/08/2025  |
 | Rafael      | Justificativa e RNF             | 01/08/2025  | 31/08/2025 |   ✔️   |  31/08/2025  |
 | Rômulo      | Objetivos e Restrições          | 01/08/2025  | 31/08/2025 |   ✔️   |  31/08/2025  |
-| Samuel      | Revisão dos documentos          | 01/08/2025  | 31/08/2025 |   ✔️   |  31/08/2025  |
+| Samuel      | Arquitetura da Solução          | 01/08/2025  | 31/08/2025 |   ✔️   |  31/08/2025  |
 
 Legenda:
 
