@@ -66,6 +66,12 @@ Leandro tem 19 anos e é estudante universitário. Ele possui alguns livros que 
 Alana tem 36 anos e trabalha no setor público, na área de meio ambiente. Ela afirma que a leitura transforma as pessoas, organiza clubes de leitura e, sempre que possível, incentiva as pessoas a buscarem formas sustentáveis de adquirir novos livros. 
 
 Tânia tem 68 anos e é enfermeira aposentada. Um dos seus principais hobbies é a leitura. Um dia, ao fazer algumas mudanças em sua casa, percebeu que possuía um grande acervo de livros. Diante disso, decidiu que deveria doar alguns deles, pois entendeu que livros parados em estantes não servem para nada. 
+## Historias de Usuarios
+Como professor, eu gostaria de disponibilizar os livros que não desejo mais e acessar novos títulos disponíveis para troca.
+
+Como estudante universitário, quero acessar um ambiente na qual posso encontrar livros disponíveis para troca
+
+Como responsável por uma biblioteca comunitária gostaria, de acessar um ambiente na qual possui livros disponíveis para doação.
 > **Links Úteis**:
 >
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
