@@ -197,9 +197,9 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A arquitetura da plataforma ‘Estante Infinita’ será do tipo **Monolítica**. Toda a lógica de negócio da aplicação (backend) será contida em um único processo servidor. Este servidor será responsável por expor uma API REST para o cliente (frontend). A aplicação se conectará a um único banco de dados relacional (ex: PostgreSQL ou MySQL), que centralizará e armazenará todas as informações de usuários, livros e trocas. Esta abordagem foi escolhida pela sua simplicidade de desenvolvimento, implantação e manutenção, sendo ideal para o escopo deste projeto. 
 
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+<img width="860" height="300" alt="Captura de tela 2025-08-31 213003" src="https://github.com/user-attachments/assets/e9d78795-c210-4e3f-89fd-78b33c9a63a2" />
 
 # Tecnologias para Implementação da Solução
 
