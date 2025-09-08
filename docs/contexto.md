@@ -39,11 +39,6 @@ Desenvolver um sistema distribuído, a plataforma **Estante Infinita**, para con
 - Implementar uma seção de comentários para que os usuários possam negociar os detalhes da troca.  
 - Desenvolver um sistema de avaliação mútua após a conclusão da troca para construir reputação na plataforma.  
 
-
-> **Links Úteis**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 ## Justificativa
 
 O presente projeto propõe o desenvolvimento de um marketplace digital com foco na compra, venda e doação de livros, uma iniciativa que surge como resposta direta a um cenário cultural e econômico complexo no Brasil. A motivação central para a criação desta plataforma reside na necessidade de democratizar o acesso à leitura em um país onde barreiras significativas ainda se impõem a uma grande parcela da população.
@@ -72,12 +67,6 @@ Como professor, eu gostaria de disponibilizar os livros que não desejo mais e a
 Como estudante universitário, quero acessar um ambiente na qual posso encontrar livros disponíveis para troca
 
 Como responsável por uma biblioteca comunitária gostaria, de acessar um ambiente na qual possui livros disponíveis para doação.
-> **Links Úteis**:
->
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 # Especificações do Projeto
 
@@ -123,11 +112,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 | 02  | O projeto deverá ser entregue em aproximadamente 6 meses                   |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
 
@@ -233,7 +217,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+A hospedagem e lancamento da plataforma será feita na plataforma vercel.
 
 # Planejamento
 
