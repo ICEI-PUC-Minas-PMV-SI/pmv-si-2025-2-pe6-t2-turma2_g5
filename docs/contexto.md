@@ -79,11 +79,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | ID     | Descrição do Requisito                                                     | Prioridade |
 | ------ | -------------------------------------------------------------------------- | ---------- |
 | RF-001 | Cadastro e login de usuários.                                              | ALTA       |
-| RF-002 | Cadastro de livros com título, autor, edição, estado e foto.               | ALTA       |
-| RF-003 | Visualização de detalhes de livros cadastrados.                            | ALTA       |
+| RF-002 | O usuário deve ser capaz de executar o cadastro de anúncios com título, autor, descrição, gêneros, editora, ano, genero, preço, condição e tipo, a edição do anúncio e a exclusão do mesmo. | ALTA       |
+| RF-003 | Visualização de detalhes de anuncios cadastrados.                          | ALTA       |
 | RF-004 | Busca e filtros por categoria.                                             | MÉDIA      |
-| RF-005 | Aba de comentários na página de cada livro para interação entre usuários.  | ALTA       |
-| RF-006 | Avaliação do usuário.                                                     | MÉDIA      |
+| RF-005 | Aba de comentários na página de cada anúncio para interação entre usuários.  | ALTA       |
+| RF-006 | Avaliação do anúncio.                                                     | MÉDIA      |
 
 ### Requisitos não Funcionais
 
