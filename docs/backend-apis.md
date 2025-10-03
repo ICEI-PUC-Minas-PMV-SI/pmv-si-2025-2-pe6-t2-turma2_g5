@@ -27,7 +27,7 @@ Seus principais objetivos são:
 ## Modelagem da Aplicação
 ~[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]~
 
-Segue um modelo relacional para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados. 
+Segue um modelo para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados. 
 ![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Imagem%20do%20WhatsApp%20de%202025-10-01%20%C3%A0(s)%2018.06.33_850fed5c.jpg)
 
 Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
