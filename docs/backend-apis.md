@@ -28,7 +28,7 @@ Seus principais objetivos são:
 ![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/DER.png)
 
 **Modelo Relacional:**
-![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo%20relacional.png)
+![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo%20relacional..png)
 
 - Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
 - Anuncio: publicação de um livro para troca, venda ou doação (id, titulo, autor, genero, condicao, tipo, ativo, criadoEm, atualizadoEm, usuarioId). 
