@@ -22,15 +22,15 @@ Seus principais objetivos são:
 ## Modelagem da Aplicação
 
 Segue um modelo relacional para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados. 
-![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo%20relacional.png)
+![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo_relacional.png)
 
 Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
 
-Anuncio: publicação de um livro para troca, venda ou doação (id, titulo, autor, descricao, isbn, editora, ano, genero, preco, condicao, tipo, ativo, criadoEm, atualizadoEm, usuarioId). 
+Anuncio: publicação de um livro para troca, venda ou doação (id, titulo, autor, genero, condicao, tipo, ativo, criadoEm, atualizadoEm, usuarioId). 
 
 Comentario: texto de um usário de um anúncio (id, texto, criadoEm, atualizadoEm, usuarioId, anuncioId).
 
-Avaliacao: informações acerca do usuário (id, avaliação, comentário, criadoEm, atualizadoEm, usuarioId, avaliadoId).  
+Avaliacao: informações acerca do usuário (id, avaliadoId, comentário, criadoEm, atualizadoEm, usuarioId, avaliadoId).  
 
 ## Tecnologias Utilizadas
 
