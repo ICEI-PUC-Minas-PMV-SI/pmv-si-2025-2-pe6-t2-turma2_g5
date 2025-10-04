@@ -21,8 +21,14 @@ Seus principais objetivos são:
 
 ## Modelagem da Aplicação
 
-Segue um modelo relacional para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados. 
+Segue um modelo do banco de dados para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados. 
 ![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo_relacional.png)
+
+Modelo Diagrama Entidade Relacionamento
+![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/DER.png)
+
+Modelo Relacional
+![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo%20relacional.png)
 
 Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
 
