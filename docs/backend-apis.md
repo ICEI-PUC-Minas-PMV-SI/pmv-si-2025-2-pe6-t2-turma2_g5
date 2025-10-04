@@ -1,16 +1,11 @@
 # APIs e Web Services
 
-~O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.~
-~Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.~
-~[Inclua uma breve descrição do projeto.]~
+A Estante Infinita nasce como resposta ao cenário em que o preço elevado dos livros se impõe como barreira ao acesso à leitura. A proposta visa democratizar o acesso ao conhecimento por meio de um marketplace digital que privilegia a compra de livros usados, a troca entre usuários e a doação, ampliando o ciclo de vida dos acervos e reduzindo custos. O público-alvo são jovens e adultos a partir de 18 anos, estudantes e leitores engajados em práticas de consumo consciente e sustentável, que veem na leitura não apenas lazer, mas também oportunidade de formação cultural e acadêmica.
 
-A Estante Infinita nasce como resposta ao cenário em que o preço elevado dos livros se impõe como barreira ao acesso à leitura, especialmente após os recentes aumentos registrados em gêneros como Ficção. A proposta justifica-se pela necessidade de democratizar o acesso ao conhecimento, criando um marketplace digital que privilegia a compra de usados e a doação gratuita, ampliando o ciclo de vida dos acervos e reduzindo custos. O público-alvo são jovens e adultos a partir de 18 anos, estudantes e leitores engajados em práticas de consumo consciente e sustentável, que buscam alternativas econômicas para acessar novos títulos e veem na leitura não apenas lazer, mas também oportunidade de formação cultural e acadêmica.
+Para apoiar essa iniciativa, foi desenvolvida uma API RESTful em Node.js com Prisma ORM, que atua como interface central entre o backend e os clientes web. Essa API organiza e expõe recursos fundamentais da aplicação, como usuários, livros, anúncios, comentários e avaliações, garantindo consistência nas operações CRUD e sustentando os fluxos principais da plataforma.
 
 
 ## Objetivos da API
-
-~O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?~
-~[Inclua os objetivos da sua api.]~
 
 Esta API foi desenvolvida no padrão RESTful, utilizando Node.js e Prisma ORM. 
 
@@ -25,7 +20,6 @@ Seus principais objetivos são:
 - Expor endpoints REST organizados em recursos (usuários, livros, anúncios, comentários, avaliações), garantindo consistência nas operações CRUD. 
 
 ## Modelagem da Aplicação
-~[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]~
 
 Segue um modelo para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados. 
 ![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Imagem%20do%20WhatsApp%20de%202025-10-01%20%C3%A0(s)%2018.06.33_850fed5c.jpg)
@@ -39,9 +33,6 @@ Comentario: texto de um usário de um anúncio (id, texto, criadoEm, atualizadoE
 Avaliacao: informações acerca do usuário (id, avaliação, comentário, criadoEm, atualizadoEm, usuarioId, avaliadoId).  
 
 ## Tecnologias Utilizadas
-
-~Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.~
-~[Lista das tecnologias principais que serão utilizadas no projeto.]~
 
 O projeto contempla o desenvolvimento de: 
 
@@ -68,7 +59,7 @@ Frontend: Aplicação web desenvolvida em Angular (Angular CLI), oferecendo uma 
 | Método  | Endpoint        | Descrição |
 |---------|----------------|-----------|
 | **POST**    | `/api/anuncios` | Cria anúncio criando um livro junto.   |
-| **GET**    | `/api/anuncios/{id}` | Detalha anúncio (inclui livro e, opcionalmente, comentários paginados).    |
+| **GET**    | `/api/anuncios/{id}` | Detalha anúncio.   |
 | **PUT**    | `/api/anuncios/{id}` | Atualiza anúncio.  |
 | **DELETE** | `/api/anuncios/{id}` | Deleta um anúncio. |
 
@@ -90,7 +81,7 @@ Frontend: Aplicação web desenvolvida em Angular (Angular CLI), oferecendo uma 
 
 ### Exemplos de requisições e respostas: 
 
-Para: cadastrar um livro. 
+- **Para: cadastrar um livro.** 
 ```json
 { 
 
@@ -127,7 +118,7 @@ Resposta: 201 OK
 } 
 ```
 
-Para: Obter informações de um perfil. 
+- **Para: Obter informações de um perfil.**
 ```json
 { 
 
@@ -151,13 +142,10 @@ Para: Obter informações de um perfil.
 ```
 
 ## Considerações de Segurança
-~[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]~
 
 A única medida de segurança implementada será de garantir que todas as informações de autenticação do usuário, como senhas, serão armazenadas no banco de dados de forma criptografada. Não haverá, neste momento, controles adicionais de autorização granular, proteção contra ataques ou hardening de infraestrutura. 
 
 ## Implantação
-
-~[Instruções para implantar a aplicação distribuída em um ambiente de produção.]~
 
 A Vercel é responsável pela hospedagem e execução das funções serverless que compõem a API da aplicação. Conjuntamente, o Supabase provê o serviço de PostgreSQL gerenciado, atuando como a fonte de dados persistente. Por fim, o Prisma ORM gerencia a conexão e tradução das consultas entre o código da aplicação (Vercel) e o banco de dados (Supabase). 
 
