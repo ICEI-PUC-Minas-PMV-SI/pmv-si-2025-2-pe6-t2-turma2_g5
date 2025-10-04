@@ -21,33 +21,29 @@ Seus principais objetivos são:
 
 ## Modelagem da Aplicação
 
-Segue um modelo do banco de dados para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados. 
-
+**Segue um modelo do banco de dados para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados:** 
 ![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/supabase.jpg)
 
-Modelo Diagrama Entidade Relacionamento
+**Modelo Diagrama Entidade Relacionamento:**
 ![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/DER.png)
 
-Modelo Relacional
+**Modelo Relacional:**
 ![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo%20relacional.png)
 
-Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
-
-Anuncio: publicação de um livro para troca, venda ou doação (id, titulo, autor, genero, condicao, tipo, ativo, criadoEm, atualizadoEm, usuarioId). 
-
-Comentario: texto de um usário de um anúncio (id, texto, criadoEm, atualizadoEm, usuarioId, anuncioId).
-
-Avaliacao: informações acerca do usuário (id, avaliadoId, comentário, criadoEm, atualizadoEm, usuarioId, avaliadoId).  
+- Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
+- Anuncio: publicação de um livro para troca, venda ou doação (id, titulo, autor, genero, condicao, tipo, ativo, criadoEm, atualizadoEm, usuarioId). 
+- Comentario: texto de um usário de um anúncio (id, texto, criadoEm, atualizadoEm, usuarioId, anuncioId).
+- Avaliacao: informações acerca do usuário (id, avaliadoId, comentário, criadoEm, atualizadoEm, usuarioId, avaliadoId).  
 
 ## Tecnologias Utilizadas
 
-O projeto contempla o desenvolvimento de: 
+### O projeto contempla o desenvolvimento de: 
 
-Backend e API: Implementação em Node.js (com Prisma ORM) responsável pela lógica de negócios e pela comunicação com o banco de dados. 
+**Backend e API:** Implementação em Node.js (com Prisma ORM) responsável pela lógica de negócios e pela comunicação com o banco de dados. 
 
-Banco de Dados: Uso do PostgreSQL hospedado no Supabase, armazenando informações de usuários, livros, anúncios, comentários e avaliações. 
+**Banco de Dados:** Uso do PostgreSQL hospedado no Supabase, armazenando informações de usuários, livros, anúncios, comentários e avaliações. 
 
-Frontend: Aplicação web desenvolvida em Angular (Angular CLI), oferecendo uma interface intuitiva para cadastro, autenticação, publicação e navegação de anúncios. 
+**Frontend:** Aplicação web desenvolvida em Angular (Angular CLI), oferecendo uma interface intuitiva para cadastro, autenticação, publicação e navegação de anúncios. 
 
 ## API Endpoints
 
@@ -156,22 +152,22 @@ A única medida de segurança implementada será de garantir que todas as inform
 
 A Vercel é responsável pela hospedagem e execução das funções serverless que compõem a API da aplicação. Conjuntamente, o Supabase provê o serviço de PostgreSQL gerenciado, atuando como a fonte de dados persistente. Por fim, o Prisma ORM gerencia a conexão e tradução das consultas entre o código da aplicação (Vercel) e o banco de dados (Supabase). 
 
-Software 
+**Software** 
 - Node.js (LTS ≥ 20.x) como runtime do backend. 
 - npm para gerenciamento de dependências. 
 - Prisma CLI  
 - PostgreSQL provido pelo Supabase como banco de dados relacional. 
 
-Hardware 
+**Hardware**
 - Como a Vercel é serverless, os recursos são alocados por execução, mas a configuração alvo é equivalente a: 
 - CPU: 1 vCPU por execução. 
 - Memória: 512 MB por função. 
 - Armazenamento: 2 GB  
 - Rede: HTTPS/TLS habilitado por padrão (domínio da Vercel). 
 
-Aplicação: Vercel  
+**Aplicação:** Vercel  
 
-Banco de Dados: Supabase (PostgreSQL) hospedado na mesma região para reduzir latência. 
+**Banco de Dados:** Supabase (PostgreSQL) hospedado na mesma região para reduzir latência. 
 
 
 ## Testes
