@@ -37,13 +37,11 @@ Seus principais objetivos são:
 
 ## Tecnologias Utilizadas
 
-### O projeto contempla o desenvolvimento de: 
+O projeto contempla o desenvolvimento de: 
 
-**Backend e API:** Implementação em Node.js (com Prisma ORM) responsável pela lógica de negócios e pela comunicação com o banco de dados. 
-
-**Banco de Dados:** Uso do PostgreSQL hospedado no Supabase, armazenando informações de usuários, livros, anúncios, comentários e avaliações. 
-
-**Frontend:** Aplicação web desenvolvida em Angular (Angular CLI), oferecendo uma interface intuitiva para cadastro, autenticação, publicação e navegação de anúncios. 
+- Backend e API: Implementação em Node.js (com Prisma ORM) responsável pela lógica de negócios e pela comunicação com o banco de dados. 
+- Banco de Dados: Uso do PostgreSQL hospedado no Supabase, armazenando informações de usuários, livros, anúncios, comentários e avaliações. 
+- Frontend: Aplicação web desenvolvida em Angular (Angular CLI), oferecendo uma interface intuitiva para cadastro, autenticação, publicação e navegação de anúncios. 
 
 ## API Endpoints
 
