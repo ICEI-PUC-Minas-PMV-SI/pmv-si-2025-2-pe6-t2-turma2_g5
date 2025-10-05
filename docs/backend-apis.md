@@ -33,7 +33,7 @@ Seus principais objetivos são:
 - Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
 - Anuncio: publicação de um livro para troca, venda ou doação (id, titulo, autor, genero, condicao, tipo, ativo, criadoEm, atualizadoEm, usuarioId). 
 - Comentario: texto de um usário de um anúncio (id, texto, criadoEm, atualizadoEm, usuarioId, anuncioId).
-- Avaliacao: informações acerca do usuário (id, avaliadoId, comentário, criadoEm, atualizadoEm, usuarioId, avaliadoId).  
+- Avaliacao: informações acerca do livro (id, avaliadoId, comentário, criadoEm, atualizadoEm, usuarioId, avaliadoId).  
 
 ## Tecnologias Utilizadas
 
