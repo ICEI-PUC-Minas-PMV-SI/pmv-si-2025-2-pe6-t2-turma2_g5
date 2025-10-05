@@ -90,7 +90,7 @@ O projeto contempla o desenvolvimento de:
 
   "autor": " Jostein Gaarder", 
 
-  "descricao": "Pequenas ranhuras", 
+  "condicao": "Pequenas ranhuras", 
 
 } 
 ```  
@@ -108,7 +108,7 @@ Resposta: 201 OK
 
     "autor": " Jostein Gaarder", 
 
-    "descricao": "Pequenas ranhuras", 
+    "condicao": "Pequenas ranhuras", 
 
     "createdAt": "2025-09-12T11:22:33.000Z", 
 
