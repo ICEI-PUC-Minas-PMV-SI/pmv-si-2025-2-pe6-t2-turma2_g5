@@ -22,13 +22,13 @@ Seus principais objetivos são:
 ## Modelagem da Aplicação
 
 **Segue um modelo do banco de dados para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados:** 
-![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/supabase.jpg)
+![Modelo do banco de dados](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/supabase.jpg)
 
 **Modelo Diagrama Entidade Relacionamento:**
-![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/DER.png)
+![DER](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/DER.png)
 
 **Modelo Relacional:**
-![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo%20relacional..png)
+![Modelo relacional](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/modelo%20relacional..png)
 
 - Usuário: informações dos usuários do sistema (id, nome, email, senha, criadoEm, atualizadoEm).
 - Anuncio: publicação de um livro para troca, venda ou doação (id, titulo, autor, genero, condicao, tipo, ativo, criadoEm, atualizadoEm, usuarioId). 
@@ -160,7 +160,7 @@ A Vercel é responsável pela hospedagem e execução das funções serverless q
 - Como a Vercel é serverless, os recursos são alocados por execução, mas a configuração alvo é equivalente a: 
 - CPU: 1 vCPU por execução. 
 - Memória: 512 MB por função. 
-- Armazenamento: 2 GB  
+- Armazenamento: 4 GB  
 - Rede: HTTPS/TLS habilitado por padrão (domínio da Vercel). 
 
 **Aplicação:** Vercel  
@@ -169,14 +169,19 @@ A Vercel é responsável pela hospedagem e execução das funções serverless q
 
 
 ## Testes
+Os testes funcionais realizados são cruciais porque validam se a API cumpre o que promete ao usuário. Reduzindo risco de regressões e servem como evidência de qualidade, dessa forma, seguem os testes realizados:
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+ 1. Objetivo: garantir unicidade de e-mail.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/1-registro-de-usuario-falha-email-em-uso.png)
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+ 2. Objetivo: permitir cadastro válido.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/2-registro-de-usuario-sucesso.png)
+
+ 3. Objetivo: autenticar credenciais corretas.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/3-login-usuario-sucesso.png)
+
+ 4. Objetivo: negar login com e-mail/senha inválidos.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/4-login-usuario-falha-credenciais.png)
 
 # Referências
 
