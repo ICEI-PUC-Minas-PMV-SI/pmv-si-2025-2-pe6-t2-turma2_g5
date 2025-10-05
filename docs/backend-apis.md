@@ -245,7 +245,7 @@ A Vercel é responsável pela hospedagem e execução das funções serverless q
 - Armazenamento: 4 GB  
 - Rede: HTTPS/TLS habilitado por padrão (domínio da Vercel). 
 
-**Aplicação:** Vercel  
+**Hospedagem:** Vercel  
 
 **Banco de Dados:** Supabase (PostgreSQL) hospedado na mesma região para reduzir latência. 
 
