@@ -316,7 +316,18 @@ Os testes funcionais realizados são cruciais porque validam se a API cumpre o q
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+Verce: https://vercel.com/docs
+
+Supabase: https://supabase.com/docs
+
+PostgreSQL: https://www.postgresql.org/docs/
+
+Prisma ORM: https://www.prisma.io/docs
+
+Node.js: https://nodejs.org/docs/latest/api/
+
+TypeScript: https://www.typescriptlang.org/pt/docs/
+
 
 # Planejamento
 
@@ -330,21 +341,13 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
-
-#### Semana 2
-
-Atualizado em: 21/04/2024
-
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Todos        | Correção da Etapa 1 | 01/09/2025     | 07/09/2025 | ✔️    | 07/09/2025      |
+| Isadora/Jaime/Rafael | Planejar APIs e Web Services BackEnd | 08/09/2025      | 14/09/2025 | ✔️     | 14/09/2025   |
+| Romulo       | Planejar APIs e Web Services FrontEnd | 08/09/2025   | 14/09/2025  | ✔️    |  14/09/2025   |
+| Isadora/Jaime/Rafael | Executar APIs e Web Services BackEnd  | 15/09/2025        | 30/09/2025 | ✔️    |  30/09/2025   |
+| Romulo   | Executar APIs e Web Services FrontEnd  | 15/09/2025        | 30/09/2025 | ✔️    |  30/09/2025    |
+| Rafael   | Testes APIs e Web Services  | 01/10/2025        | 01/10/2025 | ✔️    |  04/10/2025    |
+| Giulia   | Gerenciar e documentar serviços de TI  | 08/09/2025        |  05/10/2025 | ✔️    |  05/10/2025    |
 
 Legenda:
 - ✔️: terminado
