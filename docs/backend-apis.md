@@ -222,8 +222,6 @@ Resposta: 201 Created
     "anuncioId": 6
 
   } 
-
-} 
 ```
 
 ## Considerações de Segurança
