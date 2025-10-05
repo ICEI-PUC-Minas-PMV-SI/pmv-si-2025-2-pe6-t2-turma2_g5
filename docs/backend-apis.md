@@ -21,7 +21,7 @@ Seus principais objetivos são:
 
 ## Modelagem da Aplicação
 
-**Segue um modelo do banco de dados para armazenar e gerenciar os dados, utilizando postgreSQL como banco de dados:** 
+**Modelo do banco de dados** para armazenar e gerenciar os dados, utilizando postgreSQL:
 ![Modelo do banco de dados](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/supabase.jpg)
 
 **Modelo Diagrama Entidade Relacionamento:**
@@ -55,6 +55,26 @@ O projeto contempla o desenvolvimento de:
 | **PUT**    | `/api/usuarios/{id}` | Atualizar informações do perfil.  |
 | **DELETE** | `/api/usuarios/{id}` | Deleta um usuário. |
 
+:arrow_right: Exemplo de Requisição e Resposta para POST /api/auth/login :
+```json
+{ 
+  
+  "email": "giulia@pucminas.br", 
+
+  "senha": "123@senha", 
+
+} 
+```  
+Resposta: 200 OK
+```json
+{ 
+  
+  "token": "eyJhbGciOi...",
+
+} 
+```  
+
+
 ### Serviço de Anúncios 
 
 | Método  | Endpoint        | Descrição |
@@ -64,78 +84,142 @@ O projeto contempla o desenvolvimento de:
 | **PUT**    | `/api/anuncios/{id}` | Atualiza anúncio.  |
 | **DELETE** | `/api/anuncios/{id}` | Deleta um anúncio. |
 
-### Serviço de Comentário 
-
-| Método  | Endpoint        | Descrição |
-|---------|----------------|-----------|
-| **POST**    | `/api/comentarios` | Cria comentário em um anúncio.   |
-| **DELETE** | `/api/comentarios/{id}` | Deleta comentário em um anúncio. |
-
-### Serviço de Comentário 
-
-| Método  | Endpoint        | Descrição |
-|---------|----------------|-----------|
-| **POST**    | `/api/avaliacoes` | Cria anúncio criando um livro junto.   |
-| **PUT**    | `/api/avaliacoes/{id}` | Atualiza avaliação.    |
-| **DELETE** | `/api/avaliacoes/{id}` | Deleta avaliação. |
- 
-
-### Exemplos de requisições e respostas: 
-
-- **Para: cadastrar um livro.** 
+:arrow_right: Exemplo de Requisição e Resposta para POST /api/anuncios :
 ```json
 { 
 
   "titulo": "O Mundo de Sofia", 
 
-  "autor": " Jostein Gaarder", 
+  "autor": "Jostein Gaarder", 
 
-  "condicao": "Pequenas ranhuras", 
+  "genero": "ROMANCE",
+
+  "condicao": "NOVO",
+
+  "tipo": "VENDA",
+
+  "descricao": "Perfeito estado",
+
+  "isbn": "9780374266424",
+
+  "editora": "Companhia das Letras",
+
+  "ano": "1995",
+
+  "preço": "50.50"
 
 } 
 ```  
-Resposta: 201 OK 
+Resposta: 201 Created 
 ```json
 { 
 
-  "success": true, 
-
-  "data": { 
-
-    "id": "a0f9d6a2-4a0a-4a3e-8af9-2a1b9f1c9f00", 
+    "id": "6", 
 
     "titulo": "O Mundo de Sofia", 
 
-    "autor": " Jostein Gaarder", 
+    "autor": " Jostein Gaarder",
 
-    "condicao": "Pequenas ranhuras", 
+    "descricao": "Perfeito estado",
 
-    "createdAt": "2025-09-12T11:22:33.000Z", 
+    "isbn": "9780374266424",
 
-    "updatedAt": "2025-09-12T11:22:33.000Z" 
+    "editora": "Companhia das Letras",
+
+    "ano": "1995",
+
+    "genero": " Romance",
+
+    "preço": "50.50"
+
+    "condicao": "Pequenas ranhuras",
+
+    "tipo": "VENDA",
+
+    "ativo": "true",
+
+    "criadoEm": "2025-09-12T11:22:33.000Z", 
+
+    "atualizadoEm": "2025-09-12T11:22:33.000Z"
+
+    "usuarioId": 6
 
   } 
-
-} 
 ```
 
-- **Para: Obter informações de um perfil.**
+### Serviço de Comentário 
+
+| Método  | Endpoint        | Descrição |
+|---------|----------------|-----------|
+| **POST**    | `/api/comentarios` | Cria comentário em um anúncio.   |
+| **GET** | `/api/comentarios/{id}` | Detalha comentário em um anúncio. |
+| **GET** | `/api/comentarios/anuncio/{anuncioId}` | Lista comentários de um anúncio. |
+| **PUT** | `/api/comentarios/{id}` | Atualiza comentário (apenas autor). |
+| **DELETE** | `/api/comentarios/{id}` | Deleta comentário em um anúncio (apenas autor). |
+
+:arrow_right: Exemplo de Requisição e Resposta para PUT /api/comentarios/{id} :
 ```json
 { 
 
-  "success": true, 
+  "texto": "Podemos estar negociando o preço ?", 
 
-  "data": { 
+} 
+```  
+Resposta: 200 OK
+```json
+{ 
 
-    "id": "7b3f8b7f-0e8a-4b07-9e05-1e1d9b7b6b10", 
+    "id": 1, 
 
-    "name": "Giulia Fernandes", 
+    "texto": "Podemos estar negociando o preço ?", 
 
-    "email": "giulia@pucminas.br", 
+    "createdEm": "2025-10-12T11:22:33.000Z", 
 
-    "createdAt": "2025-09-01T12:34:56.000Z", 
+    "atualizadoEm": "2025-10-05T02:37:40.348Z"
 
-    "updatedAt": "2025-09-10T08:20:30.000Z" 
+    "usuarioId": 6, 
+    
+    "anuncioId": 4
+
+  } 
+```
+
+### Serviço de Avalição 
+
+| Método  | Endpoint        | Descrição |
+|---------|----------------|-----------|
+| **POST**    | `/api/avaliacoes` | Cria avaliação.   |
+| **GET**    | `/api/avaliacoes/{id}` | Obtem avaliação.    |
+| **GET**    | `/api/avaliacoes/anuncio/{anuncioId}` | Lista avaliações de um anúncio    |
+| **PUT**    | `/api/avaliacoes/{id}` | Atualiza avaliação.    |
+| **DELETE** | `/api/avaliacoes/{id}` | Deleta avaliação. |
+
+:arrow_right: Exemplo de Requisição e Resposta para POST /api/avaliacoes :
+```json
+{ 
+
+  "avaliacao": "REGULAR", 
+  "anuncioId": 6
+
+} 
+```  
+Resposta: 201 Created
+```json
+{ 
+
+    "id": 4, 
+
+    "texto": "REGULAR",
+
+    "comentario": "null", 
+
+    "createdEm": "2025-10-12T11:22:33.000Z", 
+
+    "atualizadoEm": "2025-10-05T02:37:40.348Z"
+
+    "usuarioId": 6, 
+    
+    "anuncioId": 6
 
   } 
 
@@ -182,6 +266,55 @@ Os testes funcionais realizados são cruciais porque validam se a API cumpre o q
 
  4. Objetivo: negar login com e-mail/senha inválidos.
 ![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/4-login-usuario-falha-credenciais.png)
+
+ 5. Objetivo: retornar listagem dos anúncios.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/5-listar-anuncios.png)
+
+ 6. Objetivo: retornar detalhes de um anúncio existente.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/6-listar-um-anuncio.png)
+
+ 7. Objetivo: proteger rota de atualização por autenticação.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/8-atualizar-anuncio-falha-token.png)
+
+ 8. Objetivo: proteger rota de atualização por autenticação.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/8-atualizar-anuncio-falha-token.png)
+
+ 9. Objetivo: autorizar somente se for o dono na atualização.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/9-atualizar-anuncio-falha-usuario.png)
+
+ 10. Objetivo: atualizar anúncio do dono autenticado.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/10-atualizar-anuncio-sucesso.png)
+
+ 11. Objetivo: criar anúncio.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/11-criar-anuncio-sucesso.png)
+
+ 12. Objetivo: criar avaliação para um anúncio.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/12-criar-avaliacao-sucesso.png)
+
+ 13. Objetivo: impedir o mesmo usuário de dar nota no mesmo anúncio duas vez
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/13-criar-avaliacao-falha-usuario.png)
+
+ 14. Objetivo: permitir atualizar a própria avaliação
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/14-atualizar-avaliacao-sucesso.png)
+
+ 15. Objetivo: retornar erro quando a avaliação não existe.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/15-atualizar-avaliacao-falha-inexistente.png)
+
+ 16. Objetivo: criar comentário vinculado a um anúncio.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/16-criar-comentario-sucesso.png)
+
+ 17. Objetivo: permitir que o autor edite seu comentário.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/17-atualizar-comentario-sucesso.png)
+
+ 18. Objetivo: restringir edição a quem criou o comentário.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/18-atualizar-comentario-falha-usuario.png)
+
+ 19. Objetivo: listar comentários de um anúncio específico.
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/19-listar-comentarios-por-anuncio-sucesso.png)
+
+ 20. Objetivo: listar avaliações de um anúncio
+![teste](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/img/Testes%20Rafa/20-listar-avaliacoes-por-anuncio-sucesso.png)
+
 
 # Referências
 
