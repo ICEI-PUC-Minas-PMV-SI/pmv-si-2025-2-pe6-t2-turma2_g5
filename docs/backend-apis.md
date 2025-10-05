@@ -335,19 +335,19 @@ TypeScript: https://www.typescriptlang.org/pt/docs/
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
-### Semana 1
-
-Atualizado em: 21/04/2024
+### Cronograma da Etapa 2
+Atualizado em: 05/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Todos        | Correção da Etapa 1 | 01/09/2025     | 07/09/2025 | ✔️    | 07/09/2025      |
-| Isadora/Jaime/Rafael | Planejar APIs e Web Services BackEnd | 08/09/2025      | 14/09/2025 | ✔️     | 14/09/2025   |
-| Romulo       | Planejar APIs e Web Services FrontEnd | 08/09/2025   | 14/09/2025  | ✔️    |  14/09/2025   |
-| Isadora/Jaime/Rafael | Executar APIs e Web Services BackEnd  | 15/09/2025        | 30/09/2025 | ✔️    |  30/09/2025   |
-| Romulo   | Executar APIs e Web Services FrontEnd  | 15/09/2025        | 30/09/2025 | ✔️    |  30/09/2025    |
-| Rafael   | Testes APIs e Web Services  | 01/10/2025        | 01/10/2025 | ✔️    |  04/10/2025    |
-| Giulia   | Gerenciar e documentar serviços de TI  | 08/09/2025        |  05/10/2025 | ✔️    |  05/10/2025    |
+| Todos | Correção da Etapa 1 | 01/09/2025     | 07/09/2025 | ✔️    | 07/09/2025      |
+| Todos | Escolha das tecnologias utilizadas | 08/09/2025      | 14/09/2025 | ✔️     | 14/09/2025   |
+| Isadora/Samuel/Romulo | Planejamento do banco | 08/09/2025   | 14/09/2025  | ✔️    |  14/09/2025   |
+| Isadora/Samuel/Romulo | Realização do diagrama do banco de dados  | 15/09/2025        | 18/09/2025 | ✔️    |  18/09/2025   |
+| Romulo/Rafael | Execução do backend | 19/09/2025 | 02/10/2025 | ✔️    |  02/10/2025   |
+| Rafael   | Teste API e web services  | 01/10/2025        | 01/10/2025 | ✔️    |  04/10/2025    |
+| Giulia   | Documentar serviços de TI, DER e modelo relacional  | 08/09/2025        |  05/10/2025 | ✔️    |  05/10/2025    |
+
 
 Legenda:
 - ✔️: terminado
