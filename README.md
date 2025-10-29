@@ -46,3 +46,5 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 # Links para os repositórios
 
 **Backend**: [Estante Infinita Backend](https://github.com/marquesrf-pucmg/estante-infinita-backend)
+
+**Frontend**: [Estante Infinita Frontend](https://github.com/RomuloFerrazChaves/turma2_g5_e-commerce_Frontend)
