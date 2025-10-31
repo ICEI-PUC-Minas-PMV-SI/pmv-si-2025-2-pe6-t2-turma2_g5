@@ -53,16 +53,27 @@ Barra de Pesquisa: É um elemento simples, com cantos arredondados e um ícone c
 
 ## Tecnologias Utilizadas
 Angular (framework) — aplicação SPA e componentes.
+
 TypeScript — linguagem principal.
+
 Angular Router — navegação e rotas da aplicação.
+
 SCSS — pré-processador de estilos.
+
 HTML5 — marcação e estilos.
+
 Node.js + npm — execução local, scripts e build.
+
 Prisma ORM — gerenciamento de dados.
+
 Express (ou servidor Node) — arquivo server.ts indica servidor para SSR.
+
 REST APIs / JSON — comunicação com backend (via serviços e interceptors).
+
 JWT (autenticação) — usado com auth.interceptor para chamadas autenticadas.
+
 Git — controle de versão.
+
 
 ## Considerações de Segurança
 
