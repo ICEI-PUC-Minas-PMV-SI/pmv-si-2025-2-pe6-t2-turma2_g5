@@ -47,9 +47,64 @@ Espaço em Branco: O uso de espaço em branco (ou espaço negativo) é fundament
 Cards de Livro: Cada livro é apresentado em um "card" individual. Este card contém a imagem, título, autor, uma breve descrição e a etiqueta de categoria colorida.
 Barra de Pesquisa: É um elemento simples, com cantos arredondados e um ícone claro, integrando-se de forma suave ao restante do layout.
 
+<img width="1900" height="751" alt="image" src="https://github.com/user-attachments/assets/79c97fb0-5223-46dd-8b82-b153ef48effc" />
+
+<img width="1832" height="767" alt="image" src="https://github.com/user-attachments/assets/1dcdd455-8623-4eee-9999-7ab005285e3e" />
+
+<img width="1863" height="811" alt="image" src="https://github.com/user-attachments/assets/512a9b38-caa0-412d-a435-f8a4048b5300" />
+
+
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+flowchart LR
+    subgraph UI["🖥️ Interface do Usuário (Angular)"]
+        A[Login Component]
+        B[Home]
+        C[BookPage]
+        D[Create/Edit Anúncio]
+        E[Profile]
+    end
+
+    subgraph Services["📦 Services (Angular)"]
+        S1[SiteService]
+        S2[AnuncioService]
+        S3[ComentarioService]
+        S4[AvaliacaoService]
+    end
+
+    subgraph Auth["🔐 AuthInterceptor"]
+        I[Verifica token e adiciona Authorization Header]
+    end
+
+    subgraph Backend["⚙️ Backend (Node.js + Express)"]
+        BE1[/AuthController/]
+        BE2[/AnuncioController/]
+        BE3[/ComentarioController/]
+        BE4[/AvaliacaoController/]
+        DB[(Banco de Dados via Prisma)]
+    end
+
+    subgraph SSR["🌐 Angular Universal (Server-side Rendering)"]
+        SSR1[server.ts]
+        SSR2[main.server.ts]
+    end
+
+    %% Fluxo principal
+    UI --> Services
+    Services --> I
+    I --> Backend
+    Backend --> DB
+    Backend --> Services
+    Services --> UI
+
+    %% Login
+    A -->|signIn()| S1 -->|POST /auth/login| BE1 --> DB
+    BE1 -->|{user, token}| UI
+    UI -->|sessionStorage| I
+
+    %% SSR
+    SSR1 --> SSR2 --> UI
+
 
 ## Tecnologias Utilizadas
 Angular (framework) — aplicação SPA e componentes.
@@ -77,7 +132,72 @@ Git — controle de versão.
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Esta aplicação utiliza Angular (Frontend), Angular Universal + Express (SSR) e REST APIs protegidas por JWT. Por se tratar de uma arquitetura distribuída, é necessário considerar cuidadosamente aspectos como autenticação, autorização, armazenamento seguro de tokens, injeção de conteúdo e proteção do servidor SSR.
+
+⚠️ 1. Principais Riscos de Segurança
+Risco	Descrição
+Exfiltração de Token (XSS)	O JWT é armazenado em sessionStorage. Caso ocorra XSS, o token pode ser roubado e reutilizado.
+CSRF (Cross-Site Request Forgery)	Se tokens forem migrados para cookies sem proteção adequada (SameSite/CSRF-Token), o backend pode processar ações não autorizadas.
+CSP Fraca (Content Security Policy)	A configuração atual permite 'unsafe-inline' e 'unsafe-eval', facilitando execução de scripts maliciosos.
+SSR sem autenticação segura	O código executado via server-side rendering não tem acesso a sessionStorage, podendo gerar falhas de autenticação ou vazamento de informações.
+Brute Force / Enumeração de Usuario	Falta de rate limiting nas rotas de autenticação.
+Uploads/Inputs sem validação	Pode permitir injeção de comandos, scripts, arquivos maliciosos ou corrompidos.
+Headers de segurança ausentes	Ausência de HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, entre outros.
+Dependências desatualizadas	Pacotes sem atualização podem conter vulnerabilidades conhecidas (CVEs).
+✅ 2. Recomendações de Alta Prioridade
+Ação	Objetivo
+1. Armazenamento Seguro de Tokens	Migrar de sessionStorage/localStorage para cookies httpOnly + Secure + SameSite=strict.
+2. Access Token curto + Refresh Token	Access tokens de 5–15 min e refresh tokens rotacionáveis via /auth/refresh.
+3. Helmet + Rate Limit no Express	Ativar headers de segurança automaticamente e limitar tentativas de login.
+4. CSP Segura	Remover 'unsafe-inline'/'unsafe-eval' e adotar CSP restrita com nonces ou hashes.
+5. CORS Restritivo	Permitir apenas domínios específicos da aplicação.
+6. HTTPS Obrigatório + HSTS	Redirecionamento automático para HTTPS e uso de Strict-Transport-Security.
+7. Validação de Inputs no Backend	Usar bibliotecas como class-validator, Joi ou Zod.
+8. SSR Seguro	No SSR, ler o token de cookies httpOnly (não de sessionStorage) e enviá-lo manualmente nas requisições.
+🛠️ 3. Trecho de Configuração Express (Produção)
+import express from "express";
+import helmet from "helmet";
+import rateLimit from "express-rate-limit";
+import cors from "cors";
+
+const app = express();
+
+// Segurança de headers
+app.use(helmet());
+
+// CORS restrito
+app.use(cors({
+  origin: "https://seu-dominio.com",
+  credentials: true,
+}));
+
+// Rate limiting para autenticação
+app.use("/auth/login", rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 5,
+  message: "Muitas tentativas de login. Tente novamente mais tarde."
+}));
+
+// HTTPS obrigatório (se usando proxy/nginx)
+app.enable("trust proxy");
+app.use((req, res, next) => {
+  if (req.secure) return next();
+  res.redirect("https://" + req.headers.host + req.url);
+});
+
+🌐 4. Proteções no Frontend (Angular)
+
+✔ Usar Route Guards e controle de acesso baseado em papéis (RBAC).
+✔ Evitar DomSanitizer.bypassSecurityTrust... sem necessidade.
+✔ Não expor tokens no localStorage/sessionStorage.
+✔ Atualizar dependências com npm audit e npm outdated.
+✔ Logout automático ao expirar o token (token expiration handling).
+
+🖥 5. Segurança no SSR (Angular Universal)
+Problema	Solução
+SSR não acessa sessionStorage/localStorage	Usar cookies httpOnly para enviar o token ao servidor.
+Requisições feitas no SSR sem autenticação	Ler o cookie do request e injetar manualmente o bearer token nas requisições do SSR.
+Vazamento de dados no HTML renderizado	Não injetar dados sensíveis diretamente durante a renderização.
 
 ## Implantação
 
@@ -87,7 +207,6 @@ Git — controle de versão.
 2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
 3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
 4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
 
 ## Testes
 
@@ -101,7 +220,7 @@ Git — controle de versão.
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+NA
 
 # Planejamento
 
@@ -109,27 +228,17 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
-### Semana 1
-
-Atualizado em: 21/04/2024
-
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
-
 #### Semana 2
 
-Atualizado em: 21/04/2024
+Atualizado em: 02/11/2025
 
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Responsável       | Tarefa/Requisito                                                                                        | Iniciado em |    Prazo   | Status | Terminado em |
+| :---------------- | :------------------------------------------------------------------------------------------------------ | :---------: | :--------: | :----: | :----------: |
+| Rômulo Ferraz     | Login, Cadastro, Página Inicial, Página do Anúncio, Página de edição do anúncio, Components, Interceptor, Estilos globais, Página do Usuário, SiteService, Routes, LoadingDirective, configuração do ambiente (frontend). (texto, estilo e funcionalidades). Documentação: Front-end Web, Projeto da Interface Web, Wireframes, Design Visual, Fluxo de Dados, Tecnologias Utilizadas, Considerações de Segurança   |  01/10/2025 | 25/10/2025 |   ✔️   |  05/02/2024  |
+| AlunaZ            | CSS unificado                                                                                           |  03/02/2024 | 10/03/2024 |   📝   |              |
+| AlunoY            | Página de login                                                                                         |  01/02/2024 | 07/03/2024 |   ⌛   |              |
+| AlunoK            | Script de login                                                                                         |  01/01/2024 | 12/03/2024 |   ❌   |              |
+
 
 Legenda:
 - ✔️: terminado
