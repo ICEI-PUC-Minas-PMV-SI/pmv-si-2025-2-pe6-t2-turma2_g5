@@ -167,7 +167,7 @@ app.use(helmet());
 
 // CORS restrito
 app.use(cors({
-  origin: "https://seu-dominio.com",
+  origin: "http://localhost:4200",
   credentials: true,
 }));
 
