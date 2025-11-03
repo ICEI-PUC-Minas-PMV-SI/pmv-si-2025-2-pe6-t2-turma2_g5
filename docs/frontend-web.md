@@ -1,4 +1,4 @@
-<img width="1897" height="925" alt="Captura de tela 2025-11-03 145119" src="https://github.com/user-attachments/assets/38faee97-53f8-4d25-b431-b1946719d11a" /># Front-end Web
+# Front-end Web
 
 Esta é a interface principal da Estante Infinita, desenvolvida em Angular com suporte a SSR (Angular Universal) para otimização de desempenho e SEO. O front-end é responsável por proporcionar uma experiência fluida e responsiva aos usuários, permitindo navegação simples, autenticação segura e interação direta com os anúncios.
 
