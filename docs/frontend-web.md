@@ -640,11 +640,11 @@ Cobrirão:
 - Resultado:
   - Tela ajusta sem quebrar layout
 
-<img width="278" height="570" alt="Captura de tela 2025-11-02 223150" src="https://github.com/user-attachments/assets/e1f1af5b-13a0-43ab-bdfa-a032fc356d5e" />
+<p align="center"> <img width="278" height="570" alt="Captura de tela 2025-11-02 223150" src="https://github.com/user-attachments/assets/e1f1af5b-13a0-43ab-bdfa-a032fc356d5e" />
 
-<img width="384" height="706" alt="Captura de tela 2025-11-02 223104" src="https://github.com/user-attachments/assets/8f718ca0-d3d2-47a4-85c0-1e019edddb27" />
+<p align="center"> <img width="384" height="706" alt="Captura de tela 2025-11-02 223104" src="https://github.com/user-attachments/assets/8f718ca0-d3d2-47a4-85c0-1e019edddb27" />
 
-<img width="572" height="778" alt="Captura de tela 2025-11-02 223304" src="https://github.com/user-attachments/assets/4ee9328d-8425-4444-8a39-25475642385b" />
+<p align="center"> <img width="572" height="778" alt="Captura de tela 2025-11-02 223304" src="https://github.com/user-attachments/assets/4ee9328d-8425-4444-8a39-25475642385b" />
 
 ### Feedback Visual
 #### CT-033 — Feedback para erros
@@ -719,7 +719,7 @@ Atualizado em: 02/11/2025
 | Rômulo Ferraz     | Login, Cadastro, Página Inicial, Página do Anúncio, Página de edição do anúncio, Components, Interceptor, Estilos globais, Página do Usuário, SiteService, Routes, LoadingDirective, configuração do ambiente (frontend). (texto, estilo e funcionalidades). Documentação: Front-end Web, Projeto da Interface Web, Wireframes, Design Visual, Fluxo de Dados, Tecnologias Utilizadas, Considerações de Segurança   |  01/10/2025 | 02/11/2025 |   ✔️   |  02/11/2025  |
 | Isadora Carvalho            | Responsividade das páginas, funcionalidade de excluir comentários criados apenas pelo usuário logado, casos de teste e documentação.                                                                                           |  01/10/2025 | 02/11/2025 |   ✔️   | 02/11/2025             |
 | Giulia Fernandes           | Responsividade e design das páginas.                                                                                         |  01/10/2025 | 02/11/2025 |   ✔️   | 02/11/2025             |
-| Samuel            | Edição do template para incluir as imagens na home, edição e detalhes.                                                                                         |  01/10/2025 | 02/11/2025 |   ✔️   |              |
+| Samuel            | Edição do template para incluir as imagens na home, edição e detalhes, e parte da documentação.                                                                                         |  01/10/2025 | 02/11/2025 |   ✔️   |              |
 | Rafael            | Página de criação de anúncios.                                                                                         |  01/10/2025 | 02/11/2025 |   ✔️   |              |
 | Jaime            |                                                                                          |  01/10/2025 | 02/11/2025 |   📝   |              |
 
