@@ -513,7 +513,8 @@ Cobrirão:
 
 - Resultado obtido:
   - Listagem filtrada
-<img width="1897" height="848" alt="Captura de tela 2025-11-02 222823" src="https://github.com/user-attachments/assets/7e43f9c1-df5a-4474-a866-3e318c79c56d" />
+
+<img width="1896" height="847" alt="Captura de tela 2025-11-02 222906" src="https://github.com/user-attachments/assets/92e18527-7ce0-4f86-9e36-36c1233bae9c" />
 
 #### CT-018 — Busca sem resultados
 
@@ -522,7 +523,8 @@ Cobrirão:
 
 - Resultado obtido:
   - Nenhum resultado na tela
-    <img width="1897" height="848" alt="Captura de tela 2025-11-02 222823" src="https://github.com/user-attachments/assets/1b380569-2484-4862-937d-265ecf0bd6b2" />
+    
+<img width="1892" height="841" alt="Captura de tela 2025-11-02 222947" src="https://github.com/user-attachments/assets/4803d2a4-5aab-4841-92a3-24566ce28db7" />
 
 #### CT-019 — Tempo da busca (RNF-004)
 
