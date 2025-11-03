@@ -204,16 +204,483 @@ Vazamento de dados no HTML renderizado	Não injetar dados sensíveis diretamente
 https://turma2-g5-e-commerce-frontend.onrender.com/
 
 ## Testes
-<h2>Login</h2>
-<img width="1143" height="583" alt="testelogin" src="https://github.com/user-attachments/assets/cf072a42-dcbf-4121-a6b0-b9e3682bda82" />
-<h2>Tela Cadastro de Usuario</h2>
-<img width="1152" height="586" alt="teladecadastro" src="https://github.com/user-attachments/assets/ded20f28-cc7e-46ac-a464-b32a791f8c53" />
-<h2>Teste de Usuario:</h2>
-<img width="475" height="83" alt="Saida" src="https://github.com/user-attachments/assets/ab8ce35f-2a75-427a-b04e-2b85cf82f38f" />
-<p>Cadastro e login efetuado com sucesso conforme requisito:</p>
-<p>RF-001 Cadastro e login de usuários.</p>
+
+### Estratégia de Testes da Aplicação (Baseada em RF e RNF)
+
+A estratégia de teste tem como objetivo garantir que o sistema atenda plenamente aos requisitos funcionais e não funcionais, entregando uma aplicação confiável, segura, responsiva, intuitiva e com bom desempenho. Serão realizados testes unitários, integração, funcionais, interface, performance, segurança e carga, utilizando ferramentas adequadas para cada objetivo.
+
+### 1. Testes dos Requisitos Funcionais (RF)
+
+Para os requisitos funcionais RF-001 a RF-006, serão criados casos de teste garantindo cobertura completa das funcionalidades essenciais da aplicação.
+
+### 2. Testes dos Requisitos Não Funcionais (RNF)
+
+Serão testados os RNFs, para garantir que os mesmos não falham.
+
+### 3. Testes Unitários
+
+Cobrirão:
+
+- Funções auxiliares
+
+- Validação dos campos
+
+- Lógicas de filtro e busca
+
+Ferramentas:
+- Jest
+
+### 4. Testes de Integração
+
+Cobrirão:
+
+- Fluxo completo de CRUD
+
+- Login + sessão + ações
+
+- Associação correta entre comentários/avaliações e anúncios
+
+- Rotas do Next.js App Router
+
+- Comunicação com o banco de dados
+
+Ferramentas:
+- Jest + Supertest
+
+### 5. Testes de Carga / Performance
+
+Cobrirão:
+
+- RNF-004 (busca ≤ 2s)
+
+- RNF-005 (detalhes ≤ 3s)
+
+- Stress test: 200, 300, 500 usuários simultâneos
+
+Ferramentas:
+- k6
+
+### 6. Testes de Segurança
+
+Cobrirão:
+
+- RNF-006 (senhas criptografadas)
+
+- Testes básicos de vulnerabilidade:
+
+- SQL Injection
+
+- XSS
+
+### 7. Ferramentas
+| Tipo de Teste     | Ferramentas                   |
+| ----------------- | ----------------------------- |
+| Unitário          | Jest                          |
+| Integração        | Jest + Supertest              |
+| Carga/Performance | k6                            |
+| Responsividade    | Chrome DevTools               |
+
+## MATRIZ DE RASTREABILIDADE — Requisitos x Casos de Teste
+
+### 1. Requisitos Funcionais (RF)
+| ID do Requisito | Descrição                                 | Casos de Teste Associados                                                                                                                                                                                                                                                                           |
+| --------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RF-001**      | Cadastro e login de usuários              | CT-001 Cadastro válido<br>CT-002 E-mail duplicado<br>CT-003 Login válido<br>CT-004 Login inválido<br>CT-005 Login usuário inexistente<br>CT-006 Logout<br>                                                                    |
+| **RF-002**      | CRUD de anúncios (criar, editar, excluir) | CT-007 Criar anúncio válido<br>CT-008 Criar anúncio com campos faltando<br>CT-009 Editar anúncio válido<br>CT-010 Impedir edição por usuário não autorizado<br>CT-011 Excluir anúncio válido |
+| **RF-003**      | Visualização de detalhes do anúncio       | CT-012 Exibir detalhes completo<br>CT-013 Anúncio inexistente<br>CT-014 Layout responsivo dos detalhes<br>CT-015 Carregamento dos dados                                                                                                                                                             |
+| **RF-004**      | Busca e filtros por categoria             | CT-016 Busca por título<br>CT-017 Filtro por gênero<br>CT-018 Busca sem resultados<br>CT-019 Tempo da busca (ligado ao RNF-004)                                                                             |
+| **RF-005**      | Aba de comentários                        | CT-020 Criar comentário válido<br>CT-021 Comentário inválido (vazio/limite)<br>CT-022 Listar comentários<br>CT-023 Excluir comentário (se permitido)<br>CT-024 Comportamento com muitos comentários                                                   |
+| **RF-006**      | Avaliar anúncio                           | CT-025 Avaliação válida<br>CT-026 Visualização de avaliações                                                                                                                    |
+
+## CASOS DE TESTE DETALHADOS 
+### RF-001 — Cadastro e Login
+#### CT-001 — Cadastro com dados válidos
+
+- Objetivo: Validar o cadastro de um novo usuário.
+
+- Pré-condição: E-mail não existe no sistema.
+
+- Entradas: Nome, e-mail válido, senha válida.
+
+- Passos:
+  1. Acessar tela de cadastro.
+  2. Preencher campos corretamente.
+  3. Clicar em "Cadastrar".
+
+- Resultado esperado:
+  - API retorna 201
+  - Conta criada
+  
+- Resultado obtido:
+  - API retorna 201
+  - Conta criada
+
+<img width="1898" height="866" alt="Captura de tela 2025-11-02 214344" src="https://github.com/user-attachments/assets/a7e40278-f959-4d63-bac2-5b19b55a2ff1" />
 
 
+#### CT-002 — Cadastro com e-mail duplicado
+
+- Objetivo: Impedir duplicidade.
+
+- Pré-condição: E-mail já cadastrado.
+
+- Entradas: Nome, e-mail existente, senha válida.
+
+- Resultado esperado:
+  - Cadastro rejeitado
+  - Mensagem de erro. Erro ao efetuar registro. Chame um administrador.
+
+- Resultado obtido:
+  - Cadastro rejeitado
+  - Mensagem "Erro ao efetuar registro. Chame um administrador."
+<img width="1884" height="912" alt="Captura de tela 2025-11-02 214538" src="https://github.com/user-attachments/assets/31a0f702-add7-4bb3-b99c-cf84f4ad4bdb" />
+
+#### CT-003 — Login com credenciais válidas
+
+- Objetivo: Confirmar autenticação.
+
+- Entradas: E-mail e senha corretos.
+
+- Resultado esperado:
+  - Login efetuado
+  - Token gerado
+  - Redirecionamento
+
+- Resultado obtido:
+  - Login efetuado
+  - Token gerado
+  - Redirecionamento
+<img width="1898" height="861" alt="Captura de tela 2025-11-02 214741" src="https://github.com/user-attachments/assets/ef6ad173-2047-407b-b62e-0f1b96a1d8c7" />
+
+#### CT-004 — Login com senha incorreta
+
+- Objetivo: Impedir acesso indevido.
+
+- Entradas: E-mail válido + senha errada.
+
+- Resultado esperado:
+  - Acesso negado – 401
+  - Mensagem de erro
+
+- Resultado obtido:
+  - Acesso negado – 401
+  - Mensagem “Erro ao efetuar login. Chame um administrador.”
+<img width="1897" height="911" alt="Captura de tela 2025-11-02 214828" src="https://github.com/user-attachments/assets/28f4ebd5-1915-423a-9a59-acee2446a5b4" />
+  
+#### CT-005 — Login com usuário inexistente
+
+- Resultado esperado:
+  - Erro 404 ou 401
+  - Mensagem genérica.
+
+- Resultado obtido:
+  - Acesso negado – 401
+  - Mensagem “Erro ao efetuar login. Chame um administrador.”
+<img width="1894" height="912" alt="Captura de tela 2025-11-02 214936" src="https://github.com/user-attachments/assets/c70a6566-94c9-4248-9b0c-8a6d9e2bbd78" />
+
+#### CT-006 — Logout
+
+- Objetivo: Encerrar sessão.
+
+- Resultado esperado:
+  - Token removido
+  - Redirecionamento para login.
+
+- Resultado obtido:
+  - Token removido
+  - Redirecionamento para login.
+<img width="1899" height="868" alt="Captura de tela 2025-11-02 215039" src="https://github.com/user-attachments/assets/460d14fd-bb28-45d0-b8c2-39cc46320b38" />
+
+### RF-002 — CRUD de Anúncios
+#### CT-007 — Criar anúncio com dados válidos
+
+- Objetivo: Validar criação completa.
+
+- Entradas: Título, autor, descrição, gênero, editora, ano, preço, condição, tipo.
+
+- Resultado esperado:
+  - Anúncio criado
+  - Exibido na listagem
+  - Feedback positivo
+
+- Resultado obtido:
+  - Anúncio criado
+  - Exibido na listagem
+  - Feedback positivo
+    <img width="1898" height="823" alt="Captura de tela 2025-11-02 221817" src="https://github.com/user-attachments/assets/38e91f7d-bc03-49d1-bab6-ffe3a887a5be" />
+
+#### CT-008 — Criar anúncio com campos faltando
+
+- Resultado esperado:
+  - Formulário bloqueia
+
+- Resultado obtido:
+  - Formulário bloqueia
+<img width="1899" height="866" alt="Captura de tela 2025-11-02 222053" src="https://github.com/user-attachments/assets/e48226ef-e206-435b-8505-7efcfdc6ea87" />
+
+
+#### CT-009 — Editar anúncio válido
+
+- Objetivo: Validar atualização.
+
+- Resultado esperado:
+  - API retorna 200
+  - Dados atualizados na tela
+
+- Resultado obtido:
+  - API retorna 200
+  - Dados atualizados na tela
+<img width="1896" height="863" alt="Captura de tela 2025-11-02 222303" src="https://github.com/user-attachments/assets/edef6b37-080b-4479-8396-cfc20acc8fbb" />
+
+#### CT-010 — Impedir edição por usuário não autorizado
+
+- Resultado esperado:
+  - Mensagem de erro
+
+- Resultado obtido:
+  - Mensagem "Você não tem permissão para editar este anúncio."
+<img width="1909" height="911" alt="Captura de tela 2025-11-02 222352" src="https://github.com/user-attachments/assets/60c37bef-2310-48b2-822e-eefaf17fdfd8" />
+
+#### CT-011 — Excluir anúncio válido
+
+- Resultado esperado:
+  - Retorno 200/204
+  - Item removido da listagem
+
+- Resultado obtido:
+  - Retorno 200/204
+  - Item removido da listagem
+<img width="1915" height="871" alt="Captura de tela 2025-11-02 222339" src="https://github.com/user-attachments/assets/278c78bc-d741-4ffe-9cf6-4765ba895ce3" />
+
+### RF-003 — Detalhamento de Anúncio
+#### CT-012 — Exibir detalhes completos
+
+- Objetivo: Garantir todas as informações do anúncio.
+
+- Resultado esperado:
+  - Título, autor, fotos, descrição, avaliações, comentários
+
+- Resultado obtido:
+  - Título, autor, fotos, descrição, avaliações, comentários
+    
+#### CT-013 — Anúncio inexistente
+
+- Resultado esperado:
+  - Erro 404
+  - Tela de “não encontrado”
+
+- Resultado obtido:
+  - Erro 404
+  - Tela de “não encontrado”
+<img width="1908" height="943" alt="Captura de tela 2025-11-02 222725" src="https://github.com/user-attachments/assets/21bb4891-bd4f-499f-bb58-f19715ea3d70" />
+    
+#### CT-014 — Responsividade da página de detalhes
+
+- Objetivo: Atender RNF-002.
+
+- Resultado esperado:
+  - Layout adaptado a smartphone/tablet
+
+- Resultado obtido:
+  - Layout adaptado a smartphone/tablet
+
+#### CT-015 — Carregamento de dados
+
+- Objetivo: Checar loaders.
+
+- Resultado esperado:
+  - Skeleton ou loading exibido
+  - Dados renderizados corretamente
+
+- Resultado obtido:
+  - Skeleton ou loading exibido
+  - Dados renderizados corretamente
+    
+### RF-004 — Busca e Filtros
+#### CT-016 — Busca por título
+
+- Resultado esperado:
+  - Anúncios relevantes exibidos
+
+- Resultado obtido:
+  - Anúncios relevantes exibidos
+    <img width="1897" height="848" alt="Captura de tela 2025-11-02 222823" src="https://github.com/user-attachments/assets/b512b1c9-7b62-496e-8677-d45ebb6a065b" />
+
+#### CT-017 — Filtro por gênero
+
+- Resultado esperado:
+  - Listagem filtrada
+
+- Resultado obtido:
+  - Listagem filtrada
+<img width="1897" height="848" alt="Captura de tela 2025-11-02 222823" src="https://github.com/user-attachments/assets/7e43f9c1-df5a-4474-a866-3e318c79c56d" />
+
+#### CT-018 — Busca sem resultados
+
+- Resultado esperado:
+  - Nenhum resultado na tela
+
+- Resultado obtido:
+  - Nenhum resultado na tela
+    <img width="1897" height="848" alt="Captura de tela 2025-11-02 222823" src="https://github.com/user-attachments/assets/1b380569-2484-4862-937d-265ecf0bd6b2" />
+
+#### CT-019 — Tempo da busca (RNF-004)
+
+- Objetivo: Performance.
+
+- Resultado esperado:
+  - Resposta ≤ 2 segundos
+
+- Resultado obtido:
+  - Resposta ≤ 2 segundos
+    
+### RF-005 — Comentários
+#### CT-020 — Criar comentário válido
+
+- Resultado esperado:
+  - Inserido e exibido imediatamente
+
+- Resultado obtido:
+  - Inserido e exibido imediatamente
+    
+#### CT-021 — Comentário inválido
+
+- Entradas: vazio, 1 caractere, > limite.
+
+- Resultado esperado:
+  - Comentário rejeitado com aviso
+
+- Resultado obtido:
+  - Comentário rejeitado com aviso
+    
+#### CT-022 — Listar comentários
+
+- Resultado esperado:
+  - Ordem correta (mais recente primeiro)
+
+- Resultado obtido:
+  - Ordem correta (mais recente primeiro)
+    
+#### CT-023 — Excluir comentário
+
+- Resultado esperado:
+  - Comentário removido
+
+- Resultado obtido:
+  - Comentário removido
+    
+#### CT-024 — Muitos comentários
+
+- Resultado esperado:
+  - Paginação ou scroll funcionando
+
+- Resultado obtido:
+  - Paginação ou scroll funcionando
+
+### RF-006 — Avaliação
+#### CT-025 — Avaliação válida
+
+- Resultado esperado:
+  - Avaliação adicionada
+
+- Resultado obtido:
+  - Avaliação adicionada
+
+#### CT-026 — Visualização das avaliações
+
+- Resultado esperado:
+  - Notas mostradas corretamente
+
+- Resultado obtido:
+  - Notas mostradas corretamente
+    
+### RNF — Usabilidade, Desempenho, Segurança, Confiabilidade
+### Usabilidade
+#### CT-027 — Usuário cria anúncio em < 30s
+
+- Objetivo: RNF-001.
+
+- Resultado:
+  - Fluxo concluído dentro do tempo
+
+#### CT-028 — Clareza dos campos
+
+- Resultado:
+  - Rótulos intuitivos
+
+#### CT-029 — Tempo total do fluxo
+
+- Resultado:
+  - Menos passos possíveis
+
+### Responsividade
+#### CT-030 — Responsividade smartphone pequeno
+#### CT-031 — Responsividade smartphone padrão
+#### CT-032 — Responsividade tablet
+
+- Resultado:
+  - Tela ajusta sem quebrar layout
+
+<img width="278" height="570" alt="Captura de tela 2025-11-02 223150" src="https://github.com/user-attachments/assets/e1f1af5b-13a0-43ab-bdfa-a032fc356d5e" />
+
+<img width="384" height="706" alt="Captura de tela 2025-11-02 223104" src="https://github.com/user-attachments/assets/8f718ca0-d3d2-47a4-85c0-1e019edddb27" />
+
+<img width="572" height="778" alt="Captura de tela 2025-11-02 223304" src="https://github.com/user-attachments/assets/4ee9328d-8425-4444-8a39-25475642385b" />
+
+### Feedback Visual
+#### CT-033 — Feedback para erros
+
+- Resultado:
+  - Toasts/modais/alerts corretos
+
+### Desempenho
+#### CT-034 — Performance da busca
+
+- Resultado:
+  - ≤ 2 segundos
+
+#### CT-035 — Stress da busca
+
+- Resultado:
+  - Sistema continua respondendo
+
+#### CT-036 — Performance detalhes do anúncio
+
+- Resultado:
+  - ≤ 3 segundos
+
+#### CT-037 — Performance perfil
+
+- Resultado esperado:
+  - ≤ 3 segundos
+
+### Segurança
+#### CT-038 — Hash da senha
+
+- Resultado:
+  - Senha não está em texto puro
+
+#### CT-039 — Testar se senha nunca trafega no front
+
+- Resultado:
+  - Nenhum retorno contém senha
+
+### Confiabilidade
+#### CT-040 — Estabilidade prolongada
+
+- Resultado:
+  - Sistema funcionando por horas sem queda
+
+#### CT-041 — Teste de reincidência de falhas
+
+- Resultado:
+  - Sistema se recupera sem corromper dados
+
+#### CT-042 — Evitar duplicação em operações
+
+- Resultado:
+  - Mesma ação não executa duas vezes
+    
 # Referências
 
 NA
@@ -230,15 +697,15 @@ Atualizado em: 02/11/2025
 
 | Responsável       | Tarefa/Requisito                                                                                        | Iniciado em |    Prazo   | Status | Terminado em |
 | :---------------- | :------------------------------------------------------------------------------------------------------ | :---------: | :--------: | :----: | :----------: |
-| Rômulo Ferraz     | Login, Cadastro, Página Inicial, Página do Anúncio, Página de edição do anúncio, Components, Interceptor, Estilos globais, Página do Usuário, SiteService, Routes, LoadingDirective, configuração do ambiente (frontend). (texto, estilo e funcionalidades). Documentação: Front-end Web, Projeto da Interface Web, Wireframes, Design Visual, Fluxo de Dados, Tecnologias Utilizadas, Considerações de Segurança   |  01/10/2025 | 25/10/2025 |   ✔️   |  05/02/2024  |
-| AlunaZ            | CSS unificado                                                                                           |  03/02/2024 | 10/03/2024 |   📝   |              |
-| AlunoY            | Página de login                                                                                         |  01/02/2024 | 07/03/2024 |   ⌛   |              |
-| AlunoK            | Script de login                                                                                         |  01/01/2024 | 12/03/2024 |   ❌   |              |
-
+| Rômulo Ferraz     | Login, Cadastro, Página Inicial, Página do Anúncio, Página de edição do anúncio, Components, Interceptor, Estilos globais, Página do Usuário, SiteService, Routes, LoadingDirective, configuração do ambiente (frontend). (texto, estilo e funcionalidades). Documentação: Front-end Web, Projeto da Interface Web, Wireframes, Design Visual, Fluxo de Dados, Tecnologias Utilizadas, Considerações de Segurança   |  01/10/2025 | 02/11/2025 |   ✔️   |  02/11/2025  |
+| Isadora Carvalho            | Responsividade das páginas, funcionalidade de excluir comentários criados apenas pelo usuário logado, casos de teste e documentação.                                                                                           |  01/10/2025 | 02/11/2025 |   ✔️   | 02/11/2025             |
+| Giulia Fernandes           | Responsividade e design das páginas.                                                                                         |  01/10/2025 | 02/11/2025 |   ✔️   | 02/11/2025             |
+| Samuel            | Edição do template para incluir as imagens na home, edição e detalhes.                                                                                         |  01/10/2025 | 02/11/2025 |   ✔️   |              |
+| Rafael            | Página de criação de anúncios.                                                                                         |  01/10/2025 | 02/11/2025 |   ✔️   |              |
+| Jaime            |                                                                                          |  01/10/2025 | 02/11/2025 |   📝   |              |
 
 Legenda:
 - ✔️: terminado
 - 📝: em execução
 - ⌛: atrasado
 - ❌: não iniciado
-
