@@ -31,11 +31,13 @@ A interface web foi desenvolvida com o framework Angular, utilizando TypeScript 
 - Profile Page: painel onde o usuário autenticado pode gerenciar seus próprios anúncios, editar ou excluir seu anúncio e visualizar interações recebidas.
 
 ### Wireframes
-
+Página Home:
 <p align="center"> <img width="617" height="769" alt="image" src="https://github.com/user-attachments/assets/adcd3e89-a426-4ef9-ba9e-0d5481a085f4" />
 
+Página Página de Detalhes do Livro:
 <p align="center"> <img width="618" height="625" alt="image" src="https://github.com/user-attachments/assets/20bcfb94-5b52-48b3-b279-78aacb8fc7d1" />
 
+Página do Perfil do Usuário:
 <p align="center"> <img width="615" height="386" alt="image" src="https://github.com/user-attachments/assets/dec52594-cac6-4cf2-9610-8337da2b3e42" />
 
 
