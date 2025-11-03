@@ -1,4 +1,4 @@
-# Front-end Web
+<img width="1897" height="925" alt="Captura de tela 2025-11-03 145119" src="https://github.com/user-attachments/assets/38faee97-53f8-4d25-b431-b1946719d11a" /># Front-end Web
 
 Esta é a interface principal da Estante Infinita, desenvolvida em Angular com suporte a SSR (Angular Universal) para otimização de desempenho e SEO. O front-end é responsável por proporcionar uma experiência fluida e responsiva aos usuários, permitindo navegação simples, autenticação segura e interação direta com os anúncios.
 
@@ -426,7 +426,7 @@ Cobrirão:
   - Anúncio criado
   - Exibido na listagem
   - Feedback positivo
-    <img width="1898" height="823" alt="Captura de tela 2025-11-02 221817" src="https://github.com/user-attachments/assets/38e91f7d-bc03-49d1-bab6-ffe3a887a5be" />
+   <img width="1892" height="963" alt="Captura de tela 2025-11-03 144944" src="https://github.com/user-attachments/assets/76eb65f1-99c3-47d6-90b7-5ca10de208da" />
 
 #### CT-008 — Criar anúncio com campos faltando
 
@@ -449,7 +449,7 @@ Cobrirão:
 - Resultado obtido:
   - API retorna 200
   - Dados atualizados na tela
-<img width="1896" height="863" alt="Captura de tela 2025-11-02 222303" src="https://github.com/user-attachments/assets/edef6b37-080b-4479-8396-cfc20acc8fbb" />
+<img width="1899" height="812" alt="Captura de tela 2025-11-03 145044" src="https://github.com/user-attachments/assets/2d3dbcfd-2cab-46a4-afad-dee5fe5cf9cd" />
 
 #### CT-010 — Impedir edição por usuário não autorizado
 
@@ -469,7 +469,7 @@ Cobrirão:
 - Resultado obtido:
   - Retorno 200/204
   - Item removido da listagem
-<img width="1915" height="871" alt="Captura de tela 2025-11-02 222339" src="https://github.com/user-attachments/assets/278c78bc-d741-4ffe-9cf6-4765ba895ce3" />
+<img width="1897" height="925" alt="Captura de tela 2025-11-03 145119" src="https://github.com/user-attachments/assets/5a4b4bf6-0ab4-4f2b-849d-e1a01283117f" />
 
 ### RF-003 — Detalhamento de Anúncio
 #### CT-012 — Exibir detalhes completos
