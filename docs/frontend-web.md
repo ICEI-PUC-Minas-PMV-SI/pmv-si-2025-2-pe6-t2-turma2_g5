@@ -204,14 +204,14 @@ Vazamento de dados no HTML renderizado	Não injetar dados sensíveis diretamente
 https://turma2-g5-e-commerce-frontend.onrender.com/
 
 ## Testes
-Login
+<h2>Login</h2>
 <img width="1143" height="583" alt="testelogin" src="https://github.com/user-attachments/assets/cf072a42-dcbf-4121-a6b0-b9e3682bda82" />
 Tela de Cadastro de Usuario
 <img width="1152" height="586" alt="teladecadastro" src="https://github.com/user-attachments/assets/ded20f28-cc7e-46ac-a464-b32a791f8c53" />
-Teste de Usuario:
+<h2>Teste de Usuario:</h2>
 <img width="475" height="83" alt="Saida" src="https://github.com/user-attachments/assets/ab8ce35f-2a75-427a-b04e-2b85cf82f38f" />
-Cadastro e login efetuado com sucesso conforme requisito:
-RF-001 Cadastro e login de usuários.
+<p>Cadastro e login efetuado com sucesso conforme requisito:</p>
+<p>RF-001 Cadastro e login de usuários.</p>
 
 
 # Referências
