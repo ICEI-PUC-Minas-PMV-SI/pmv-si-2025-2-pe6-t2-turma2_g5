@@ -204,6 +204,7 @@ Vazamento de dados no HTML renderizado	Não injetar dados sensíveis diretamente
 https://turma2-g5-e-commerce-frontend.onrender.com/
 
 ## Testes
+<img width="1900" height="751" alt="image" src="docs/img/testelogin.png" />
 
 [Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
