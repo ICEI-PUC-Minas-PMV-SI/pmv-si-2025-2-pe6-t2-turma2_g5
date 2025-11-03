@@ -1,25 +1,42 @@
 # Front-end Web
 
-Frontend Angular para um marketplace de anúncios com suporte a SSR (Angular Universal).
+Esta é a interface principal da Estante Infinita, desenvolvida em Angular com suporte a SSR (Angular Universal) para otimização de desempenho e SEO. O front-end é responsável por proporcionar uma experiência fluida e responsiva aos usuários, permitindo navegação simples, autenticação segura e interação direta com os anúncios.
 
-Objetivo: permitir autenticação (registro/login) e CRUD completo de anúncios (criar, editar, listar, visualizar) com possibilidade do usuário inserir comentários em cada um desses anúncios, demonstrando seu interesse nos mesmos.
-Principais pontos: interceptor de auth, componentes reutilizáveis (header/footer), SSR para SEO.
-Stack: Angular, TypeScript.
-Como rodar (dev): execute npm install e depois ng serve.
+O objetivo deste front-end é oferecer uma plataforma completa para criação, gerenciamento e visualização de anúncios, possibilitando que cada usuário publique seus próprios itens, interaja com outros por meio de comentários e manifeste interesse nos anúncios disponíveis.
+
+Objetivos específicos do Front-end:
+- Gerenciamento de anúncios (CRUD): permitir criar, editar, listar e visualizar anúncios de forma intuitiva e eficiente.
+- Interação e engajamento: possibilitar que usuários adicionem comentários em cada anúncio, demonstrando interesse e promovendo troca entre os participantes.
+- Componentização e reuso: utilizar componentes reutilizáveis, como cabeçalho e rodapé, para garantir consistência visual e manutenção simplificada.
+- SEO e performance: aplicar SSR (Server-Side Rendering) para melhorar a indexação nos mecanismos de busca e otimizar o tempo de carregamento.
+
+Stack utilizada:
+- Framework: Angular
+- Linguagem: TypeScript
+
+Como executar (modo de desenvolvimento):
+<br>Execute npm install para instalar as dependências e, em seguida, ng serve para iniciar o servidor local.
 
 ## Projeto da Interface Web
 
-A interface web foi desenvolvida utilizando o framework Angular, priorizando um design responsivo e minimalista. A paleta de cores é composta por tons de azul e branco, transmitindo clareza e profissionalismo.
-O layout segue uma estrutura com cabeçalho fixo, menu lateral e área principal de conteúdo. Na página inicial, o usuário visualiza uma lista de anúncios com opções de filtragem e busca. Ao clicar em um item, é redirecionado para a página de detalhes.
-As interações incluem feedback visual em todas as ações, como mensagens de sucesso ou erro. O design foi pensado para oferecer uma navegação simples e intuitiva.
+A interface web foi desenvolvida com o framework Angular, utilizando TypeScript e suporte a SSR (Angular Universal).
+<br>O design segue uma estética minimalista e responsiva, com predominância de tons branco, preto e magenta, transmitindo uma experiência acolhedora, organizada e intuitiva.
+<br>O layout segue uma estrutura com cabeçalho fixo, menu lateral e área principal de conteúdo.
+- Home: página inicial que apresenta uma saudação de boas-vindas (“Bem-vindo à Estante Infinita”) e permite ao usuário descobrir os anúncios dos livros, incluindo incluindo uma barra de pesquisa e um menu para gêneros. 
+
+- Login e Registro: telas de autenticação implementadas com formulários reativos (Reactive Forms), garantindo validação de campos e envio de dados à API de autenticação via JWT. O login realiza a verificação das credenciais e, em caso de sucesso, armazena o token JWT e as informações do usuário no sessionStorage, permitindo o acesso às áreas restritas da aplicação. Já o registro possibilita criar uma nova conta informando nome, e-mail e senha, apresentando feedback visual e opção para redirecionar o usuário à página de login.
+
+- Book Page (Detalhes do Anúncio): exibe as informações completas de cada livro, incluindo descrição, autor, gênero e espaço para comentários, onde os usuários podem demonstrar interesse no anúncio.
+
+- Profile Page: painel onde o usuário autenticado pode gerenciar seus próprios anúncios, editar ou excluir seu anúncio e visualizar interações recebidas.
 
 ### Wireframes
 
-<img width="617" height="769" alt="image" src="https://github.com/user-attachments/assets/adcd3e89-a426-4ef9-ba9e-0d5481a085f4" />
+<p align="center"> <img width="617" height="769" alt="image" src="https://github.com/user-attachments/assets/adcd3e89-a426-4ef9-ba9e-0d5481a085f4" />
 
-<img width="618" height="625" alt="image" src="https://github.com/user-attachments/assets/20bcfb94-5b52-48b3-b279-78aacb8fc7d1" />
+<p align="center"> <img width="618" height="625" alt="image" src="https://github.com/user-attachments/assets/20bcfb94-5b52-48b3-b279-78aacb8fc7d1" />
 
-<img width="615" height="386" alt="image" src="https://github.com/user-attachments/assets/dec52594-cac6-4cf2-9610-8337da2b3e42" />
+<p align="center"> <img width="615" height="386" alt="image" src="https://github.com/user-attachments/assets/dec52594-cac6-4cf2-9610-8337da2b3e42" />
 
 
 ### Design Visual
