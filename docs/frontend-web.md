@@ -704,7 +704,8 @@ Cobrirão:
     
 # Referências
 
-NA
+Angular: https://angular.dev/overview
+<br> TypeScript: https://www.typescriptlang.org/docs/
 
 # Planejamento
 
