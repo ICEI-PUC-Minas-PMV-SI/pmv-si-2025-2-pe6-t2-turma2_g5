@@ -481,7 +481,8 @@ Cobrirão:
 
 - Resultado obtido:
   - Título, autor, fotos, descrição, avaliações, comentários
-    
+<img width="1900" height="864" alt="Captura de tela 2025-11-03 140618" src="https://github.com/user-attachments/assets/bf659abf-722e-41b5-9ac1-2ea316b597ee" />
+
 #### CT-013 — Anúncio inexistente
 
 - Resultado esperado:
@@ -502,6 +503,9 @@ Cobrirão:
 
 - Resultado obtido:
   - Layout adaptado a smartphone/tablet
+<img width="350" height="716" alt="Captura de tela 2025-11-03 140457" src="https://github.com/user-attachments/assets/8fec5f4f-2b9c-4bdc-9037-ff35be8535ed" />
+
+<img width="472" height="700" alt="Captura de tela 2025-11-03 140538" src="https://github.com/user-attachments/assets/7c5bd3a5-534e-459c-8e51-b1a2d984df8e" />
 
 #### CT-015 — Carregamento de dados
 
@@ -563,7 +567,8 @@ Cobrirão:
 
 - Resultado obtido:
   - Inserido e exibido imediatamente
-    
+<img width="1898" height="855" alt="Captura de tela 2025-11-03 140023" src="https://github.com/user-attachments/assets/458fd9bb-b2fd-494b-8eb8-8de2ef214f2c" />
+
 #### CT-021 — Comentário inválido
 
 - Entradas: vazio, 1 caractere, > limite.
@@ -573,7 +578,8 @@ Cobrirão:
 
 - Resultado obtido:
   - Comentário rejeitado com aviso
-    
+<img width="1887" height="963" alt="Captura de tela 2025-11-03 140215" src="https://github.com/user-attachments/assets/219a4127-30db-475f-8fec-70f5ada866f7" />
+
 #### CT-022 — Listar comentários
 
 - Resultado esperado:
@@ -606,6 +612,7 @@ Cobrirão:
 
 - Resultado obtido:
   - Avaliação adicionada
+<img width="1899" height="789" alt="Captura de tela 2025-11-03 140320" src="https://github.com/user-attachments/assets/bd7bf6c4-319a-45cf-8188-2e988033e631" />
 
 #### CT-026 — Visualização das avaliações
 
