@@ -1,6 +1,8 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+A Estante Infinita nasce como resposta ao cenário em que o preço elevado dos livros se impõe como barreira ao acesso à leitura. A proposta visa democratizar o acesso ao conhecimento por meio de um marketplace digital que privilegia a compra de livros usados, a troca entre usuários e a doação, ampliando o ciclo de vida dos acervos e reduzindo custos. O público-alvo são jovens e adultos a partir de 18 anos, estudantes e leitores engajados em práticas de consumo consciente e sustentável, que veem na leitura não apenas lazer, mas também oportunidade de formação cultural e acadêmica.
+
+Para apoiar essa iniciativa, foi desenvolvida um aplicativo mobile desenvolvido com React Native, Expo e TypeScript, foi estruturado uma camada de comunicação que centraliza todas as solicitações ao backend em Express hospedado na Vercel.
 
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
