@@ -23,9 +23,26 @@ Para apoiar essa iniciativa, foi desenvolvida um aplicativo mobile desenvolvido 
 
 [Lista das tecnologias principais que serão utilizadas no projeto.]
 
+- React Native: base do aplicativo mobile, responsável pelos componentes de interface e pela renderização nativa nas telas em app/ e nos componentes em components/.
+
+- Expo: gerencia o ambiente de desenvolvimento e build (expo start nos scripts do package.json) e integra recursos nativos (StatusBar, etc.). O ponto de entrada é o expo-router/entry.
+
+- TypeScript: tipagem estática em praticamente todo o código (.ts e .tsx), incluindo hooks (hooks/useBooks.ts), contexto de autenticação (contexts/AuthContext.tsx), serviços e tipos em lib/types.ts.
+
+- expo-router: faz o roteamento baseado em arquivos na pasta app/ (_layout.tsx, index.tsx, grupos de rotas, etc.), controlando navegação entre telas e fluxos autenticados/não autenticados.
+
+- React Navigation (@react-navigation/native): integrado ao expo-router para prover o ThemeProvider e a navegação com tema (NAV_THEME em lib/theme.ts) no layout raiz (app/_layout.tsx).
+
+- Axios: em services/api.ts é criado o apiClient com baseURL vinda de BASE_API_URL (lib/constants.ts). Há um interceptor que lê o token armazenado e adiciona Authorization: Bearer <token> em todas as requisições.
+
+- AsyncStorage (@react-native-async-storage/async-storage): garante que o usuário continue autenticado entre aberturas do app.
+
+- Context API (AuthContext): contexts/AuthContext.tsx centraliza estado de autenticação (user, token, loading, signIn, signOut, etc.). Envolve a árvore de componentes (via AuthProvider em _layout.tsx), permitindo que telas e hooks acessem useAuth().
+
+
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A única medida de segurança implementada será de garantir que todas as informações de autenticação do usuário, como senhas, serão armazenadas no banco de dados de forma criptografada. Não haverá, neste momento, controles adicionais de autorização granular, proteção contra ataques ou hardening de infraestrutura.
 
 ## Implantação
 
