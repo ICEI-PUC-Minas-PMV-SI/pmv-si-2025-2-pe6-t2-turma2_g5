@@ -48,7 +48,7 @@
 
 |Testes Funcional do:       | Objetivo | Comprovação |
 |---------------------------|------------|--------------|
-| Comentário                | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil | [Teste Comentário](https://youtube.com/shorts/CUOKNwWoLqU) |
+| Comentário                | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil. | [Teste Comentário](https://youtube.com/shorts/LyCj__Z6S2I) |
 
 
 # Referências
