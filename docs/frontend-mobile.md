@@ -55,7 +55,17 @@ Os testes funcionais realizados são cruciais porque validam se o app cumpre o q
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+Vercel: https://vercel.com/docs
+
+Node.js: https://nodejs.org/docs/latest/api/
+
+TypeScript: https://www.typescriptlang.org/pt/docs/
+
+React Native: https://reactnative.dev/docs/getting-started
+
+Expo: https://docs.expo.dev/
+
+TypeScript: https://www.typescriptlang.org/pt/docs/
 
 # Planejamento
 
