@@ -4,16 +4,62 @@ A Estante Infinita nasce como resposta ao cenário em que o preço elevado dos l
 
 Para apoiar essa iniciativa, foi desenvolvida um aplicativo mobile desenvolvido com React Native, Expo e TypeScript, foi estruturado uma camada de comunicação que centraliza todas as solicitações ao backend em Express hospedado na Vercel.
 
+O aplicativo foi projetado para oferecer aos usuários uma navegação simples, responsiva e intuitiva, permitindo acesso rápido às principais funcionalidades da plataforma diretamente pelo smartphone. <br>
+
+O objetivo deste front-end mobile é ampliar a acessibilidade do sistema, permitindo que cada usuário crie, gerencie e visualize anúncios de forma prática, além de interagir com outros participantes por meio de comentários e demonstrações de interesse — tudo em uma interface amigável e pensada para uso cotidiano.
+
+### Objetivos específicos do Front-end Mobile:
+
+Gerenciamento de anúncios (CRUD): permitir criar, editar, listar e visualizar anúncios no celular, de forma simples e eficiente. <br>
+
+Interação e engajamento: possibilitar que usuários comentem nos anúncios, manifestem interesse e acompanhem atualizações em tempo real. <br>
+
+Experiência mobile-first: oferecer uma interface adaptada especialmente para telas pequenas, priorizando usabilidade, legibilidade e fluidez. <br>
+
+Integração com o Backend: garantir comunicação eficiente via API, mantendo sincronização contínua entre aplicativo e servidor. <br>
+
+Performance e otimização: utilizar recursos nativos do React Native para garantir rapidez, renderização otimizada e uma experiência consistente. <br>
+
+### Stack utilizada:
+
+Framework: React Native <br>
+
+Linguagem: TypeScript
+
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface móvel da Estante Infinita foi desenvolvida utilizando React Native, priorizando uma experiência fluida, intuitiva e otimizada para dispositivos móveis. O design segue a mesma identidade visual da versão web, mantendo uma estética minimalista, com predominância de tons branco, preto e magenta, garantindo consistência entre as plataformas e proporcionando uma navegação agradável e moderna.
+
+O layout foi projetado com foco em mobile-first, utilizando componentes nativos, navegação empilhada e menus contextuais, garantindo boa legibilidade, hierarquia clara das informações e interações rápidas para o usuário.
+
+### Principais Telas e Interações:
+
+Home: tela inicial que exibe apresenta os anúncios disponíveis. O usuário pode navegar pelos itens, utilizar a barra de pesquisa e acessar filtros como gênero literário. O layout prioriza cartões de anúncios organizados em lista vertical, garantindo visual limpo e toque rápido.
+
+Login e Registro: telas de autenticação implementadas com validação de campos e comunicação com a API. Após login bem-sucedido, o token e os dados do usuário são armazenados para permitir acesso seguro às funcionalidades restritas. A tela de registro permite criar uma nova conta com nome, e-mail e senha, oferecendo feedbacks visuais e navegação direta entre login e cadastro.
+
+Book Page (Detalhes do Anúncio): apresenta informações detalhadas sobre o livro selecionado, incluindo descrição, autor, gênero e área dedicada a comentários. Os usuários podem manifestar interesse no anúncio e interagir com o proprietário diretamente pela interface, com atualização dinâmica das interações.
+
+Profile Page: área exclusiva para o usuário autenticado, onde é possível gerenciar seus próprios anúncios. Permite editar, excluir e visualizar interações e comentários recebidos. A interface utiliza componentes como botões para criação de novos anúncios, facilitando ações rápidas.
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+<img width="1536" height="1024" alt="wireframe" src="https://github.com/user-attachments/assets/219bb19d-06b9-4698-a2b0-f0fab2039487" />
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+Minimalista, moderno e limpo. O design prioriza a legibilidade e a organização, utilizando um layout estruturado e um uso generoso de espaço em branco para evitar poluição visual.
+
+Paleta de Cores: A paleta é primariamente neutra, com um único e forte ponto de cor para destaque e identidade. Branco e Cinza Claro: O fundo principal da área de conteúdo é branco, enquanto o "hero banner" (a faixa superior) usa um tom de cinza muito claro na borda. Isso cria uma base suave e limpa. Preto e Cinza Escuro: Usados para a maior parte da tipografia (títulos, textos, nomes de autores) e para os ícones. Garantem alto contraste e excelente legibilidade. 
+
+Tipografia: A tipografia é inteiramente sans-serif (sem serifa), o que contribui para a sensação de modernidade e clareza. Hierarquia: Há uma hierarquia visual clara. Títulos principais (como "Estante Infinita" e os títulos dos livros, ex: "Duna") usam um peso bold (negrito) e um tamanho de fonte maior. Texto de Apoio: O subtítulo e as descrições dos livros usam um peso de fonte mais leve (regular ou light) e um tamanho menor, facilitando a diferenciação entre título e conteúdo. 
+
+Ícones e Elementos Gráficos: Os ícones e elementos gráficos são simples e consistentes, reforçando o minimalismo.Ícones de Categoria: Ícones de UI: Ícones de interface padrão, como o ícone de busca (lupa) na barra de pesquisa segue o estilo de contorno e simplicidade. Esta é uma escolha de design inteligente que conecta o conteúdo diretamente ao nome da marca ("Estante Infinita").
+
+Layout e Outros Elementos: Layout em Grade (Grid): O conteúdo principal, especialmente a lista de livros, é organizado em um sistema de grade (cards). Isso cria uma sensação de ordem, alinhamento e facilita a varredura visual. Espaço em Branco: O uso de espaço em branco (ou espaço negativo) é fundamental neste design. Ele separa claramente a seção de categorias, a barra de pesquisa e a lista de livros, permitindo que cada elemento "respire". Cards de Livro: Cada livro é apresentado em um "card" individual. Este card contém a imagem, título, autor, uma breve descrição e a etiqueta de categoria colorida. Barra de Pesquisa: É um elemento simples, com cantos arredondados e um ícone claro, integrando-se de forma suave ao restante do layout.
+
+![WhatsApp Image 2025-11-29 at 09 01 04 (1)](https://github.com/user-attachments/assets/eacf7a02-8026-4846-ba02-09e4cf1670f1)
+![WhatsApp Image 2025-11-29 at 09 01 04 (2)](https://github.com/user-attachments/assets/4ca9295d-75d6-4fa9-a28c-c90d9d2e2265)
+![WhatsApp Image 2025-11-29 at 09 01 04 (3)](https://github.com/user-attachments/assets/63e3cd25-4ae7-4d45-a2d2-6527cdd71735)
 
 ## Fluxo de Dados
 
@@ -46,13 +92,7 @@ A única medida de segurança implementada será de garantir que todas as inform
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+https://express-js-on-vercel-ten-cyan.vercel.app
 
 ## Testes
 Os testes funcionais realizados são cruciais porque validam se o app cumpre o que promete ao usuário. Reduzindo risco de regressões e servem como evidência de qualidade, dessa forma, seguem vídeo dos testes realizados:
@@ -92,25 +132,15 @@ TypeScript: https://www.typescriptlang.org/pt/docs/
 
 ### Semana 1
 
-Atualizado em: 21/11/2025
+Atualizado em: 29/11/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Rômulo Ferraz | Login, Registro e Adição de comentários | 10/11/2025     | 21/11/2025 | ✔️    | 18/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
+| Rômulo Ferraz | Login, Registro e Adição de comentários | 10/11/2025     | 21/11/2025 | ✔️    | 21/11/2025      |
+| Isadora Aparecida| Objetivos, Projeto da Interface, Wireframes, Design Visual | 03/11/2025 | 30/11/2025 | ✔️ | 29/11/2025 |
 | AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
-#### Semana 2
-
-Atualizado em: 21/04/2024
-
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
 
 Legenda:
 - ✔️: terminado
