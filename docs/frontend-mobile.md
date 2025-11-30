@@ -45,6 +45,12 @@
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
+
+|Testes Funcional do: | Objetivo | Comprovação |
+|---------------------|------------|--------------|
+| Comentário          | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil | |
+
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
