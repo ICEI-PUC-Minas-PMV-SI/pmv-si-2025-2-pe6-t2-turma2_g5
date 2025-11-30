@@ -139,7 +139,7 @@ TypeScript: https://www.typescriptlang.org/pt/docs/
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
-### Semana 1
+### Cronograma da Etapa 4
 
 Atualizado em: 29/11/2025
 
@@ -147,7 +147,7 @@ Atualizado em: 29/11/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Rômulo Ferraz | Login, Registro e Adição de comentários | 10/11/2025     | 21/11/2025 | ✔️    | 21/11/2025      |
 | Isadora Aparecida| Objetivos, Projeto da Interface, Wireframes, Design Visual | 03/11/2025 | 30/11/2025 | ✔️ | 29/11/2025 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
+| Giulia Fernandes        | Documentação da introdução, testes de usuários, tecnologias utilizadas  | 23/11/2025     | 30/11/2025 | ✔️     |   29/11/2025    |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
 
