@@ -46,9 +46,9 @@
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
 
-|Testes Funcional do: | Objetivo | Comprovação |
-|---------------------|------------|--------------|
-| Comentário          | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil | |
+|Testes Funcional do:       | Objetivo | Comprovação |
+|---------------------------|------------|--------------|
+| Comentário                | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil | [Teste Comentário](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g5/blob/main/docs/Teste/Coment%C3%A1rio.mp4) |
 
 
 # Referências
