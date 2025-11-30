@@ -48,8 +48,12 @@
 
 |Testes Funcional do:       | Objetivo | Comprovação |
 |---------------------------|------------|--------------|
+| Login/Logout              | Acessar e sair do perfil, caso insira senha incorreta, apresentar erro. | [Teste Login/Logout](https://youtube.com/shorts/ALd58aVlsDI?feature=share) |
+| Cadastro                  | Adicionar o cadastro de um perfil. | [Teste Cadastro](https://youtube.com/shorts/y67OkBwByl8) |
+| Cadastro                  | Erro ao cadastrar um perfil com um e-mail já cadastrado. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
+| Cadastro                  | Erro ao não cumprir a exigência do preenchimento dos campos obrigatórios. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
 | Comentário                | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil. | [Teste Comentário](https://youtube.com/shorts/LyCj__Z6S2I) |
-| Login/Logout                | Acessar e sair do perfil, caso insira senha incorreta, dar erro. | [Teste Comentário](https://youtube.com/shorts/ALd58aVlsDI?feature=share) |
+
 
 # Referências
 
