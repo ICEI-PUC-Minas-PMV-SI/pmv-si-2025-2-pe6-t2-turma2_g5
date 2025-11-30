@@ -49,11 +49,15 @@
 |Testes Funcional do:       | Objetivo | Comprovação |
 |---------------------------|------------|--------------|
 | Login/Logout              | Acessar e sair do perfil, caso insira senha incorreta, apresentar erro. | [Teste Login/Logout](https://youtube.com/shorts/ALd58aVlsDI?feature=share) |
+| Login                     | Erro ao por login com usuário inexistente. | [Teste Login (ERRO)](https://youtube.com/shorts/QTc7n1b-WRw) |
 | Cadastro                  | Adicionar o cadastro de um perfil. | [Teste Cadastro](https://youtube.com/shorts/y67OkBwByl8) |
 | Cadastro                  | Erro ao cadastrar um perfil com um e-mail já cadastrado. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
 | Cadastro                  | Erro ao não cumprir a exigência do preenchimento dos campos obrigatórios. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
 | Comentário                | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil. | [Teste Comentário](https://youtube.com/shorts/LyCj__Z6S2I) |
-
+| Anuncio                     | Listar todos os anúncios. | [Listagem Anuncio](https://youtube.com/shorts/0YdXlSAFCDs) |
+| Anuncio                     | Busca por ID existente e inexistente. | [Buscar Anuncio](https://youtube.com/shorts/t_5iaKFQt4A) |
+| Anuncio                     | Criar anúncio. | [Criar Anuncio]() |  
+| Anuncio                     | Criar anúncio com dados obrigatórios faltando. | [Criar Anuncio] (ERRO) () | 
 
 # Referências
 
