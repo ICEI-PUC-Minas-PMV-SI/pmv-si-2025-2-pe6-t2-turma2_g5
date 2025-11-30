@@ -48,3 +48,5 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 **Backend**: [Estante Infinita Backend](https://github.com/marquesrf-pucmg/estante-infinita-backend)
 
 **Frontend**: [Estante Infinita Frontend](https://github.com/RomuloFerrazChaves/turma2_g5_e-commerce_Frontend)
+
+**Mobile**: [Estante Infinita Mobile](https://github.com/oSam2/estante-infinita-app)
