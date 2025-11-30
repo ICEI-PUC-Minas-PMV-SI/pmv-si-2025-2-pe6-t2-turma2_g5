@@ -57,9 +57,18 @@ Tipografia: A tipografia é inteiramente sans-serif (sem serifa), o que contribu
 
 Layout e Outros Elementos: Layout em Grade (Grid): O conteúdo principal, especialmente a lista de livros, é organizado em um sistema de grade (cards). Isso cria uma sensação de ordem, alinhamento e facilita a varredura visual. Espaço em Branco: O uso de espaço em branco (ou espaço negativo) é fundamental neste design. Ele separa claramente a seção de categorias, a barra de pesquisa e a lista de livros, permitindo que cada elemento "respire". Cards de Livro: Cada livro é apresentado em um "card" individual. Este card contém a imagem, título, autor, uma breve descrição e a etiqueta de categoria colorida. Barra de Pesquisa: É um elemento simples, com cantos arredondados e um ícone claro, integrando-se de forma suave ao restante do layout.
 
-![WhatsApp Image 2025-11-29 at 09 01 04 (1)](https://github.com/user-attachments/assets/eacf7a02-8026-4846-ba02-09e4cf1670f1)
-![WhatsApp Image 2025-11-29 at 09 01 04 (2)](https://github.com/user-attachments/assets/4ca9295d-75d6-4fa9-a28c-c90d9d2e2265)
-![WhatsApp Image 2025-11-29 at 09 01 04 (3)](https://github.com/user-attachments/assets/63e3cd25-4ae7-4d45-a2d2-6527cdd71735)
+<p align="center">
+  <img width="250" height="550" src="https://github.com/user-attachments/assets/eacf7a02-8026-4846-ba02-09e4cf1670f1">
+</p>
+<br>
+<p align="center">
+  <img width="250" height="550" src="https://github.com/user-attachments/assets/4ca9295d-75d6-4fa9-a28c-c90d9d2e2265">
+</p>
+<br>
+<p align="center">
+  <img width="250" height="550" src="https://github.com/user-attachments/assets/63e3cd25-4ae7-4d45-a2d2-6527cdd71735">
+</p>
+<br>
 
 ## Fluxo de Dados
 
