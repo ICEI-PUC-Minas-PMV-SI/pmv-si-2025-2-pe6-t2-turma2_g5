@@ -42,8 +42,7 @@ Book Page (Detalhes do Anúncio): apresenta informações detalhadas sobre o liv
 Profile Page: área exclusiva para o usuário autenticado, onde é possível gerenciar seus próprios anúncios. Permite editar, excluir e visualizar interações e comentários recebidos. A interface utiliza componentes como botões para criação de novos anúncios, facilitando ações rápidas.
 
 ### Wireframes
-
-<img width="1536" height="1024" alt="wireframe" src="https://github.com/user-attachments/assets/219bb19d-06b9-4698-a2b0-f0fab2039487" />
+<img width="1536" height="1024" alt="wireframes" src="https://github.com/user-attachments/assets/377fd190-6df0-4eac-b047-b11ae786a229" />
 
 ### Design Visual
 
