@@ -36,28 +36,20 @@
 5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
 
 ## Testes
+Os testes funcionais realizados são cruciais porque validam se o app cumpre o que promete ao usuário. Reduzindo risco de regressões e servem como evidência de qualidade, dessa forma, seguem vídeo dos testes realizados:
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
-
-
-|Testes Funcional do:       | Objetivo | Comprovação |
+|Testes Funcionais           | Objetivo                 |           Comprovação |
 |---------------------------|------------|--------------|
-| Login/Logout              | Acessar e sair do perfil, caso insira senha incorreta, apresentar erro. | [Teste Login/Logout](https://youtube.com/shorts/ALd58aVlsDI?feature=share) |
-| Login                     | Erro ao por login com usuário inexistente. | [Teste Login (ERRO)](https://youtube.com/shorts/QTc7n1b-WRw) |
-| Cadastro                  | Adicionar o cadastro de um perfil. | [Teste Cadastro](https://youtube.com/shorts/y67OkBwByl8) |
-| Cadastro                  | Erro ao cadastrar um perfil com um e-mail já cadastrado. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
-| Cadastro                  | Erro ao não cumprir a exigência do preenchimento dos campos obrigatórios. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
-| Comentário                | Criar, editar, excluir comentário e confirmar que não existe a possibilidade de editar ou excluir comentário de outro perfil. | [Teste Comentário](https://youtube.com/shorts/LyCj__Z6S2I) |
-| Anuncio                     | Listar todos os anúncios. | [Listagem Anuncio](https://youtube.com/shorts/0YdXlSAFCDs) |
-| Anuncio                     | Busca por ID existente e inexistente. | [Buscar Anuncio](https://youtube.com/shorts/t_5iaKFQt4A) |
-| Anuncio                     | Criar anúncio. | [Criar Anuncio]() |  
-| Anuncio                     | Criar anúncio com dados obrigatórios faltando. | [Criar Anuncio] (ERRO) () | 
+| Login/Logout              | **Verificar** o acesso e a saída do perfil, e que o sistema apresente uma mensagem de erro ao inserir credenciais incorretas. | [Teste Login/Logout](https://youtube.com/shorts/ALd58aVlsDI?feature=share) |
+| Login                     | **Validar** o comportamento do sistema ao tentar fazer login com um usuário inexistente, esperando a exibição de uma mensagem de erro. | [Teste Login (ERRO)](https://youtube.com/shorts/QTc7n1b-WRw) |
+| Cadastro                  | **Testar** o fluxo completo de cadastro de um novo perfil de usuário. | [Teste Cadastro](https://youtube.com/shorts/y67OkBwByl8) |
+| Cadastro                  | **Garantir** que o sistema impeça o cadastro de um novo perfil utilizando um e-mail já existente, exibindo erro. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
+| Cadastro                  | **Confirmar** que o sistema exige o preenchimento de todos os campos obrigatórios para a conclusão do cadastro, impedindo a submissão incompleta. | [Teste Cadastro (ERRO)](https://youtube.com/shorts/tczVXXS1LUs) |
+| Comentário                | **Avaliar** as funcionalidades de criação, edição e exclusão de comentários, além de **verificar** as restrições de permissão (não permitir editar/excluir comentários de outros usuários). | [Teste Comentário](https://youtube.com/shorts/LyCj__Z6S2I) |
+| Anuncio                     | **Verificar** se todos os anúncios cadastrados são listados corretamente na interface. | [Listagem Anuncio](https://youtube.com/shorts/0YdXlSAFCDs) |
+| Anuncio                     | **Testar** a busca por anúncios utilizando IDs válidos e inválidos para **confirmar** o retorno esperado em ambos os cenários. | [Buscar Anuncio](https://youtube.com/shorts/t_5iaKFQt4A) |
+| Anuncio                     | **Validar** a criação de um novo anúncio e **garantir** que a publicação seja impedida caso faltem dados obrigatórios. | [Criar Anuncio](https://youtube.com/shorts/gpUKH38tkNk?feature=share) |  
+
 
 # Referências
 
