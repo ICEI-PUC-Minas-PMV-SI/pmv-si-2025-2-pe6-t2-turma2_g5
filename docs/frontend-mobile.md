@@ -70,9 +70,7 @@ Layout e Outros Elementos: Layout em Grade (Grid): O conteúdo principal, especi
 <br>
 
 ## Fluxo de Dados
-
-[Diagrama ou descrição do fluxo de dados na aplicação.]
-
+<img width="963" height="396" alt="Diagrama de Fluxo de Dados" src="https://github.com/user-attachments/assets/8971750e-aaa5-4577-9d83-3d53c8a34f0e" />
 ## Tecnologias Utilizadas
 
 - React Native: base do aplicativo mobile, responsável pelos componentes de interface e pela renderização nativa nas telas em app/ e nos componentes em components/.
