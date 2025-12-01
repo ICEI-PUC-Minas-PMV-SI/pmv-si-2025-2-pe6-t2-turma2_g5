@@ -145,8 +145,8 @@ Atualizado em: 30/11/2025
 | Isadora Aparecida| Objetivos, Projeto da Interface, Wireframes, Design Visual | 03/11/2025 | 30/11/2025 | ✔️ | 29/11/2025 |
 | Giulia Fernandes        | Documentação da introdução, testes de usuários, tecnologias utilizadas  | 23/11/2025     | 30/11/2025 | ✔️     |   29/11/2025    |
 | Samuel | Design, desenvolvimento completo e build | 12/09/2025 | 26/11/2025 | ✔️ | 30/11/2025 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
-
+| Rafael        | Imagens da documentação  |    03/11/2025        | 30/11/2005 | ✔️    |  29/11/2025     |
+| Jaime        | Fluxo de Dados  |    03/11/2025        | 30/11/2005 | ✔️    |  30/11/2025     |
 
 Legenda:
 - ✔️: terminado
