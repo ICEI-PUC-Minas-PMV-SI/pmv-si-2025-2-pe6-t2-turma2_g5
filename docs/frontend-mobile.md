@@ -75,8 +75,6 @@ Layout e Outros Elementos: Layout em Grade (Grid): O conteúdo principal, especi
 
 ## Tecnologias Utilizadas
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
-
 - React Native: base do aplicativo mobile, responsável pelos componentes de interface e pela renderização nativa nas telas em app/ e nos componentes em components/.
 
 - Expo: gerencia o ambiente de desenvolvimento e build (expo start nos scripts do package.json) e integra recursos nativos (StatusBar, etc.). O ponto de entrada é o expo-router/entry.
